@@ -1,0 +1,1427 @@
+Script started on 2026-04-13 11:22:47+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="160" LINES="15"]
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/5b3eroot@d9309ac6b740:/workspace/Project_2026/5b3e# script.sh
+[?2004lbash: script.sh: command not found
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/5b3eroot@d9309ac6b740:/workspace/Project_2026/5b3e# script.sh[4Pclearpython3 Results_Extract.py [12Pbash script.sh [4@chmod +x script.sh 
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/5b3eroot@d9309ac6b740:/workspace/Project_2026/5b3e# ./script.sh 
+[?2004linput file: ../../arch/gemini_like.yaml
+input file: ../../problemCNN/AlexNet_layer6_FC.yaml
+input file: ../../mapper/mapper.yaml
+input file: ../../constraints/constrains.yaml
+  _______                __                
+ /_  __(_)___ ___  ___  / /___  ____  ____ 
+  / / / / __ `__ \/ _ \/ / __ \/ __ \/ __ \
+ / / / / / / / / /  __/ / /_/ / /_/ / /_/ /
+/_/ /_/_/ /_/ /_/\___/_/\____/\____/ .___/ 
+                                  /_/      
+
+Problem configuration complete.
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+execute:/usr/local/bin/accelergy ../../arch/gemini_like.yaml ../../problemCNN/AlexNet_layer6_FC.yaml ../../mapper/mapper.yaml ../../constraints/constrains.yaml --oprefix timeloop-mapper. -o ./ > timeloop-mapper.accelergy.log 2>&1
+Generate Accelergy ERT (energy reference table) to replace internal energy model.
+Generate Accelergy ART (area reference table) to replace internal area model.
+Architecture configuration complete.
+Sparse optimization configuration complete.
+Using threads = 28
+Mapper configuration complete.
+Initializing Index Factorization subspace.
+  Factorization options along problem dimension C = 3003
+  Factorization options along problem dimension M = 18564
+  Factorization options along problem dimension R = 49
+  Factorization options along problem dimension S = 49
+  Factorization options along problem dimension N = 1
+  Factorization options along problem dimension P = 1
+  Factorization options along problem dimension Q = 1
+Mapspace Dimension [IndexFactorization] Size: 133850208492
+Mapspace Dimension [LoopPermutation] Size: 645241282560000
+Mapspace Dimension [Spatial] Size: 64
+Mapspace Dimension [DatatypeBypass] Size: 1
+Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 4780364589 Residue: 0
+Mapspace construction complete.
+Search configuration complete.
+[  5] Utilization = 0.04 | pJ/Compute =  123.678 | L4[WIO] C4 M32 S6 - L3[WI] C8 R2 M2 - L2[O] M8 C4 - L1[I] M2 C2 R3X M4X - L0[W] Q1 
+[  4] Utilization = 0.05 | pJ/Compute =  115.493 | L4[WIO] R6 M16 S3 C2 - L3[WI] C2 M2X C8X - L2[O] M2 - L1[I] M8 C8 S2X M8X - L0[W] Q1 
+[ 14] Utilization = 0.05 | pJ/Compute =  115.706 | L4[WIO] R6 S3 M16 C2 - L3[WI] C2 M2X C8X - L2[O] C8 M2 - L1[I] M8 S2X M8X - L0[W] Q1 
+[ 24] Utilization = 0.05 | pJ/Compute =  115.780 | L4[WIO] M32 S6 C4 - L3[WI] R2 M2 C32 - L2[O] M8 - L1[I] C2 M2 R3X M4X - L0[W] Q1 
+[ 15] Utilization = 0.05 | pJ/Compute =  118.344 | L4[WIO] C4 S6 M32 - L3[WI] R2 M2 C8 C2X - L2[O] M8 C2 - L1[I] M2 C2 R3X M4X - L0[W] Q1 
+[ 10] Utilization = 0.05 | pJ/Compute =  115.852 | L4[WIO] C2 R6 S3 M16 - L3[WI] C2 M2X C8X - L2[O] M2 C2 - L1[I] C4 M8 S2X M8X - L0[W] Q1 
+[ 14] Utilization = 0.05 | pJ/Compute =  115.537 | L4[WIO] M16 C2 R6 S3 - L3[WI] C2 M2X C8X - L2[O] M2 C8 - L1[I] M8 S2X M8X - L0[W] Q1 
+[ 24] Utilization = 0.05 | pJ/Compute =  114.811 | L4[WIO] S6 C4 M32 - L3[WI] M2 C32 R2 - L2[O] M8 - L1[I] C2 M2 R3X M4X - L0[W] Q1 
+[  5] Utilization = 0.05 | pJ/Compute =  117.982 | L4[WIO] C4 S6 M32 - L3[WI] M2 R2 C8 - L2[O] M8 C4 - L1[I] C2 M2 R3X M4X - L0[W] Q1 
+[ 13] Utilization = 0.05 | pJ/Compute =  115.852 | L4[WIO] C2 R6 S3 M16 - L3[WI] C2 M2X C8X - L2[O] M2 C4 - L1[I] C2 M8 S2X M8X - L0[W] Q1 
+[ 10] Utilization = 0.05 | pJ/Compute =  115.422 | L4[WIO] C2 M16 S3 R6 - L3[WI] C2 M2X C8X - L2[O] C2 M2 - L1[I] M8 C4 S2X M8X - L0[W] Q1 
+[  4] Utilization = 0.05 | pJ/Compute =  115.404 | L4[WIO] M16 S3 R6 C2 - L3[WI] C2 M2X C8X - L2[O] M2 - L1[I] C8 M8 S2X M8X - L0[W] Q1 
+[ 17] Utilization = 0.05 | pJ/Compute =  146.758 | L4[WIO] S6 M32 - L3[WI] C2 M64 R3X C2X - L2[O] M2 R2 C8 - L1[I] C4 C2X - L0[W] Q1 
+[  0] Utilization = 0.05 | pJ/Compute =  114.123 | L4[WIO] M16 C32 - L3[WI] Q1 M4X C2X - L2[O] M2 R3 C2 S2 - L1[I] M16 C2 S3X R2X M2X - L0[W] Q1 
+[  1] Utilization = 0.05 | pJ/Compute =  143.823 | L4[WIO] S6 M32 - L3[WI] C2 M64 R3X C2X - L2[O] M2 C4 R2 - L1[I] C2 C8X - L0[W] Q1 
+[  1] Utilization = 0.05 | pJ/Compute =  143.723 | L4[WIO] S6 M32 - L3[WI] M64 C2 R3X C2X - L2[O] C4 M2 R2 - L1[I] C2 C8X - L0[W] Q1 
+[ 17] Utilization = 0.05 | pJ/Compute =  132.161 | L4[WIO] S6 M32 - L3[WI] M64 C2 R3X C2X - L2[O] R2 C8 M2 - L1[I] C4 C2X - L0[W] Q1 
+[  1] Utilization = 0.05 | pJ/Compute =  129.226 | L4[WIO] S6 M32 - L3[WI] M64 C2 R3X C2X - L2[O] C4 R2 M2 - L1[I] C2 C8X - L0[W] Q1 
+[ 17] Utilization = 0.05 | pJ/Compute =  113.814 | L4[WIO] C2 R3 M32 - L3[WI] C64 R2X M2X - L2[O] M32 - L1[I] S2 S3X M2X C2X - L0[W] Q1 
+[  9] Utilization = 0.05 | pJ/Compute =  113.476 | L4[WIO] M4 C64 - L3[WI] C2 S3 R3 M2X - L2[O] Q1 - L1[I] S2 M128 R2X M4X C2X - L0[W] Q1 
+[ 20] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 11] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 16] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  7] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 19] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 18] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  6] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 14] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 24] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  4] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 10] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 15] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 27] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 12] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 26] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  5] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  0] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  3] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 17] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 23] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 13] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  1] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 21] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 25] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  8] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  2] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  9] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 22] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+
+
+Summary stats for best mapping found by mapper:
+  Utilization = 0.05 | pJ/Compute =  113.476
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/5b3eroot@d9309ac6b740:/workspace/Project_2026/5b3e# python3 Results_Extract.py 
+[?2004l/workspace/Project_2026/5b3e/Results_Extract.py:63: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  df = df._append({'Folder': folder, 'TOPS/W': tops_per_watt, 'Cycles': cycles, 'Computes': computes, 'pJ_LMAC': pJ_MACC, 'pJ_PEWeightRegs': pJ_PEWeightRegs, 'pJ_PEAccuBuffer': pJ_PEAccuBuffer, 'pJ_PEInputBuffer': pJ_PEInputBuffer, 'pJ_GlobalBuffer': pJ_GlobalBuffer, 'pJ_DRAM': pJ_DRAM, 'pJ/Compute': pJ_per_compute, 'Energy': energy, 'Utilization': utilization, 'EDP': edp}, ignore_index=True)
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/5b3eroot@d9309ac6b740:/workspace/Project_2026/5b3e# python3  Results_Extract.py 
+[?2004lbash: python: command not found
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/5b3eroot@d9309ac6b740:/workspace/Project_2026/5b3e# python Results_Extract.py [1@3 Results_Extract.py 
+[?2004lExcel file saved to: Results/summary_stats.xlsx
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/5b3eroot@d9309ac6b740:/workspace/Project_2026/5b3e# python3 Results_Extract.py 
+[?2004lCSV file saved to: Results/summary_stats.csv
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/5b3eroot@d9309ac6b740:/workspace/Project_2026/5b3e# cd ..
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026root@d9309ac6b740:/workspace/Project_2026# ls
+[?2004l[0m[01;34m10b6e[0m  [01;34m15b4e[0m  [01;34m5b3e[0m  [01;34m6b4e[0m  [01;34m7b4e[0m  [01;34m8b4e[0m  [01;34m9b4e[0m  [01;34mAlexNet[0m
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026root@d9309ac6b740:/workspace/Project_2026# 6b4e/
+[?2004lbash: 6b4e/: Is a directory
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026root@d9309ac6b740:/workspace/Project_2026# cd 6b4e/
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/6b4eroot@d9309ac6b740:/workspace/Project_2026/6b4e# cd 6b4e/[3P6b4e/     chlscd ..python3 Results_Extract.py [1P Results_Extract.py [1@3 Results_Extract.py [15P./script.sh [7@chmod +x script.sh [7P./script.sh [7@chmod +x script.sh 
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/6b4eroot@d9309ac6b740:/workspace/Project_2026/6b4e# chmod +x script.sh [11Pd 6b4e/h[Klscd ..python3 Results_Extract.py [1P Results_Extract.py [1@3 Results_Extract.py [15P./script.sh \
+[?2004l[?2004h> 
+[?2004linput file: ../../arch/gemini_like.yaml
+input file: ../../problemCNN/AlexNet_layer4.yaml
+input file: ../../mapper/mapper.yaml
+input file: ../../constraints/constrains.yaml
+  _______                __                
+ /_  __(_)___ ___  ___  / /___  ____  ____ 
+  / / / / __ `__ \/ _ \/ / __ \/ __ \/ __ \
+ / / / / / / / / /  __/ / /_/ / /_/ / /_/ /
+/_/ /_/_/ /_/ /_/\___/_/\____/\____/ .___/ 
+                                  /_/      
+
+Problem configuration complete.
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+execute:/usr/local/bin/accelergy ../../arch/gemini_like.yaml ../../problemCNN/AlexNet_layer4.yaml ../../mapper/mapper.yaml ../../constraints/constrains.yaml --oprefix timeloop-mapper. -o ./ > timeloop-mapper.accelergy.log 2>&1
+Generate Accelergy ERT (energy reference table) to replace internal energy model.
+Generate Accelergy ART (area reference table) to replace internal area model.
+Architecture configuration complete.
+Sparse optimization configuration complete.
+Using threads = 28
+Mapper configuration complete.
+Initializing Index Factorization subspace.
+  Factorization options along problem dimension C = 12012
+  Factorization options along problem dimension M = 12012
+  Factorization options along problem dimension R = 7
+  Factorization options along problem dimension S = 7
+  Factorization options along problem dimension N = 1
+  Factorization options along problem dimension P = 7
+  Factorization options along problem dimension Q = 7
+Mapspace Dimension [IndexFactorization] Size: 346435833744
+Mapspace Dimension [LoopPermutation] Size: 645241282560000
+Mapspace Dimension [Spatial] Size: 64
+Mapspace Dimension [DatatypeBypass] Size: 1
+Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 12372708348 Residue: 0
+Mapspace construction complete.
+Search configuration complete.
+[  2] Utilization = 0.12 | pJ/Compute =   13.964 | L4[WIO] M8 C4 R3 - L3[WI] M8 C4X - L2[O] Q13 M3 - L1[I] S3 M2 C3 C8X - L0[W] P13 
+[ 11] Utilization = 0.05 | pJ/Compute =   15.595 | L4[WIO] M8 C4 R3 - L3[WI] M8 C4X - L2[O] Q13 M3 - L1[I] S3 M2 C8 C3X - L0[W] P13 
+[  9] Utilization = 0.06 | pJ/Compute =   14.943 | L4[WIO] M8 C4 R3 - L3[WI] M8 C4X - L2[O] Q13 M3 - L1[I] S3 M2 C6 C4X - L0[W] P13 
+[ 14] Utilization = 0.02 | pJ/Compute =   21.968 | L4[WIO] M8 R3 C4 - L3[WI] M8 C4X - L2[O] M3 Q13 - L1[I] S3 C24 M2 - L0[W] P13 
+[  6] Utilization = 0.09 | pJ/Compute =   14.290 | L4[WIO] M8 C4 R3 - L3[WI] M8 C4X - L2[O] Q13 M3 - L1[I] S3 M2 C4 C6X - L0[W] P13 
+[ 17] Utilization = 0.02 | pJ/Compute =   47.054 | L4[WIO] Q13 M8 - L3[WI] C12 M3 S3X M2X - L2[O] C8 P13 M2 - L1[I] R3 M4 C4 - L0[W] Q1 
+[ 14] Utilization = 0.02 | pJ/Compute =   21.556 | L4[WIO] M8 C4 R3 - L3[WI] M8 C4X - L2[O] M3 Q13 - L1[I] M2 S3 C24 - L0[W] P13 
+[  4] Utilization = 0.19 | pJ/Compute =   37.839 | L4[WIO] M8 R3 - L3[WI] M2 C4 P13 Q13 M2X C2X - L2[O] S3 C48 - L1[I] Q1 M12X - L0[W] Q1 
+[ 12] Utilization = 0.01 | pJ/Compute =   15.867 | L4[WIO] C2 M2 R3 - L3[WI] P13 M2 C8 M2X - L2[O] S3 C12 M3 - L1[I] C2 M16 - L0[W] Q13 
+[ 18] Utilization = 0.02 | pJ/Compute =   48.725 | L4[WIO] Q13 M8 - L3[WI] M3 C12 S3X M2X - L2[O] M2 P13 C32 - L1[I] R3 M4 - L0[W] Q1 
+[ 13] Utilization = 0.03 | pJ/Compute =   18.055 | L4[WIO] M8 R3 C4 - L3[WI] M8 C4X - L2[O] M3 Q13 - L1[I] S3 C12 M2 C2X - L0[W] P13 
+[ 21] Utilization = 0.02 | pJ/Compute =   47.054 | L4[WIO] Q13 M8 - L3[WI] C12 M3 S3X M2X - L2[O] P13 C16 M2 - L1[I] R3 C2 M4 - L0[W] Q1 
+[  1] Utilization = 0.02 | pJ/Compute =   46.611 | L4[WIO] Q13 M8 - L3[WI] M3 C12 S3X M2X - L2[O] C2 P13 M2 - L1[I] M4 C16 R3 - L0[W] Q1 
+[ 19] Utilization = 0.19 | pJ/Compute =    8.774 | L4[WIO] R3 C2 M2 - L3[WI] M2 P13 C8 M2X C2X - L2[O] M3 S3 - L1[I] M16 C12X - L0[W] Q13 
+[ 20] Utilization = 0.19 | pJ/Compute =   23.303 | L4[WIO] M8 C4 R3 - L3[WI] M8 C4X - L2[O] Q13 M3 C2 - L1[I] S3 M2 C12X - L0[W] P13 
+[ 10] Utilization = 0.05 | pJ/Compute =   37.386 | L4[WIO] M8 Q13 - L3[WI] C12 M3 S3X M2X - L2[O] C4 P13 M2 - L1[I] R3 C4 M4 C2X - L0[W] Q1 
+[  8] Utilization = 0.02 | pJ/Compute =   12.225 | L4[WIO] M2 C2 R3 - L3[WI] P13 C8 M2 M2X - L2[O] C8 S3 M3 - L1[I] M16 C3X - L0[W] Q13 
+[ 14] Utilization = 0.02 | pJ/Compute =   20.813 | L4[WIO] C4 M8 R3 - L3[WI] M8 C4X - L2[O] Q13 M3 - L1[I] M2 C24 S3 - L0[W] P13 
+[  1] Utilization = 0.02 | pJ/Compute =   42.970 | L4[WIO] M8 Q13 - L3[WI] M3 C12 S3X M2X - L2[O] M2 P13 C2 - L1[I] R3 C16 M4 - L0[W] Q1 
+[ 17] Utilization = 0.02 | pJ/Compute =   46.566 | L4[WIO] Q13 M8 - L3[WI] C12 M3 S3X M2X - L2[O] M2 C8 P13 - L1[I] R3 M4 C4 - L0[W] Q1 
+[  3] Utilization = 0.03 | pJ/Compute =   11.572 | L4[WIO] M2 C2 R3 - L3[WI] C8 M2 P13 M2X - L2[O] C6 S3 M3 - L1[I] M16 C4X - L0[W] Q13 
+[ 23] Utilization = 0.09 | pJ/Compute =    9.372 | L4[WIO] C2 R3 M2 - L3[WI] M2 P13 C8 M2X C2X - L2[O] S3 M3 - L1[I] M16 C2 C6X - L0[W] Q13 
+[ 24] Utilization = 0.09 | pJ/Compute =   14.702 | L4[WIO] M8 R3 C4 - L3[WI] M8 C4X - L2[O] Q13 C2 M3 - L1[I] S3 M2 C2 C6X - L0[W] P13 
+[  0] Utilization = 0.01 | pJ/Compute =   17.516 | L4[WIO] R3 C2 M2 - L3[WI] P13 C8 M2 M2X - L2[O] C4 M3 S3 - L1[I] C6 M16 - L0[W] Q13 
+[ 13] Utilization = 0.03 | pJ/Compute =   17.643 | L4[WIO] M8 C4 R3 - L3[WI] M8 C4X - L2[O] M3 Q13 - L1[I] M2 S3 C12 C2X - L0[W] P13 
+[ 17] Utilization = 0.02 | pJ/Compute =   43.414 | L4[WIO] M8 Q13 - L3[WI] C12 M3 S3X M2X - L2[O] M2 P13 C8 - L1[I] M4 R3 C4 - L0[W] Q1 
+[ 16] Utilization = 0.05 | pJ/Compute =   43.141 | L4[WIO] Q13 M8 - L3[WI] C12 M3 S3X M2X - L2[O] P13 C8 M2 - L1[I] M4 R3 C2 C2X - L0[W] Q1 
+[ 21] Utilization = 0.02 | pJ/Compute =   46.611 | L4[WIO] Q13 M8 - L3[WI] M3 C12 S3X M2X - L2[O] C16 P13 M2 - L1[I] M4 C2 R3 - L0[W] Q1 
+[ 20] Utilization = 0.19 | pJ/Compute =   14.793 | L4[WIO] R3 M8 C4 - L3[WI] M8 C4X - L2[O] C2 M3 Q13 - L1[I] S3 M2 C12X - L0[W] P13 
+[  5] Utilization = 0.02 | pJ/Compute =   13.548 | L4[WIO] R3 C2 M2 - L3[WI] C8 P13 M2 M2X - L2[O] C6 S3 M3 - L1[I] M16 C2 C2X - L0[W] Q13 
+[  7] Utilization = 0.50 | pJ/Compute =   32.394 | L4[WIO] C3 M12 - L3[WI] C2 P13 S3 M2X C8X - L2[O] Q13 M2 - L1[I] M4 R3 C2 M2X C4X - L0[W] Q1 
+[  8] Utilization = 0.02 | pJ/Compute =   10.703 | L4[WIO] M2 C2 R3 - L3[WI] P13 M2 C8 M2X - L2[O] C8 M3 S3 - L1[I] M16 C3X - L0[W] Q13 
+[ 20] Utilization = 0.19 | pJ/Compute =   13.465 | L4[WIO] R3 C4 M8 - L3[WI] M8 C4X - L2[O] C2 Q13 M3 - L1[I] M2 S3 C12X - L0[W] P13 
+[ 15] Utilization = 0.25 | pJ/Compute =   34.973 | L4[WIO] C3 M12 - L3[WI] C2 S3 P13 M2X C8X - L2[O] C2 Q13 M2 - L1[I] R3 M4 C2 M2X C2X - L0[W] Q1 
+[ 25] Utilization = 0.38 | pJ/Compute =   33.662 | L4[WIO] C8 M3 R3 Q13 - L3[WI] Q1 M2X C3X - L2[O] M2 S3 C4 - L1[I] P13 M4 C2 M8X C2X - L0[W] Q1 
+[  4] Utilization = 1.00 | pJ/Compute =   31.628 | L4[WIO] M12 C3 - L3[WI] P13 C2 S3 M2X C8X - L2[O] Q13 M2 - L1[I] R3 M4 M2X C8X - L0[W] Q1 
+[  7] Utilization = 0.50 | pJ/Compute =   32.252 | L4[WIO] C3 M12 - L3[WI] P13 C2 S3 M2X C8X - L2[O] Q13 M2 - L1[I] C2 R3 M4 M2X C4X - L0[W] Q1 
+[  2] Utilization = 0.75 | pJ/Compute =    7.962 | L4[WIO] M2 S3 C2 - L3[WI] M4 Q13 C3 R3X C4X - L2[O] M4 - L1[I] M6 C2 P13 M2X C8X - L0[W] Q1 
+[ 24] Utilization = 1.00 | pJ/Compute =   10.587 | L4[WIO] C2 S3 - L3[WI] M12 C6 M16X - L2[O] M2 C2 Q13 - L1[I] R3 C16X - L0[W] P13 
+[ 24] Utilization = 1.00 | pJ/Compute =    9.417 | L4[WIO] S3 C2 - L3[WI] M12 C6 M16X - L2[O] Q13 C2 M2 - L1[I] R3 C16X - L0[W] P13 
+[  9] Utilization = 1.00 | pJ/Compute =    9.366 | L4[WIO] C2 S3 - L3[WI] M12 C6 M16X - L2[O] Q13 M2 - L1[I] C2 R3 C16X - L0[W] P13 
+[ 12] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  1] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 20] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 22] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 11] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 27] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 23] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  3] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 24] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 13] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 18] Utilization = 1.00 | pJ/Compute =    7.833 | L4[WIO] R3 S3 - L3[WI] M2 Q13 M16X - L2[O] C12 M6 - L1[I] C4 M2X C8X - L0[W] P13 
+[ 25] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 14] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 26] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 16] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  4] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 15] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 17] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 19] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  8] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 10] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  7] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 21] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  9] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  2] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  6] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  0] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  5] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 18] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+
+
+Summary stats for best mapping found by mapper:
+  Utilization = 1.00 | pJ/Compute =    7.833
+input file: ../../arch/gemini_like.yaml
+input file: ../../problemCNN/AlexNet_layer7_FC.yaml
+input file: ../../mapper/mapper.yaml
+input file: ../../constraints/constrains.yaml
+  _______                __                
+ /_  __(_)___ ___  ___  / /___  ____  ____ 
+  / / / / __ `__ \/ _ \/ / __ \/ __ \/ __ \
+ / / / / / / / / /  __/ / /_/ / /_/ / /_/ /
+/_/ /_/_/ /_/ /_/\___/_/\____/\____/ .___/ 
+                                  /_/      
+
+Problem configuration complete.
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+execute:/usr/local/bin/accelergy ../../arch/gemini_like.yaml ../../problemCNN/AlexNet_layer7_FC.yaml ../../mapper/mapper.yaml ../../constraints/constrains.yaml --oprefix timeloop-mapper. -o ./ > timeloop-mapper.accelergy.log 2>&1
+Generate Accelergy ERT (energy reference table) to replace internal energy model.
+Generate Accelergy ART (area reference table) to replace internal area model.
+Architecture configuration complete.
+Sparse optimization configuration complete.
+Using threads = 28
+Mapper configuration complete.
+Initializing Index Factorization subspace.
+  Factorization options along problem dimension C = 18564
+  Factorization options along problem dimension M = 18564
+  Factorization options along problem dimension R = 1
+  Factorization options along problem dimension S = 1
+  Factorization options along problem dimension N = 1
+  Factorization options along problem dimension P = 1
+  Factorization options along problem dimension Q = 1
+Mapspace Dimension [IndexFactorization] Size: 344622096
+Mapspace Dimension [LoopPermutation] Size: 645241282560000
+Mapspace Dimension [Spatial] Size: 64
+Mapspace Dimension [DatatypeBypass] Size: 1
+Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 12307932 Residue: 0
+Mapspace construction complete.
+Search configuration complete.
+[ 24] Utilization = 0.02 | pJ/Compute =  122.050 | L4[WIO] C8 M256 - L3[WI] C2 C2X - L2[O] Q1 - L1[I] M8 C128 M2X - L0[W] Q1 
+[ 23] Utilization = 0.04 | pJ/Compute =  121.148 | L4[WIO] M256 C8 - L3[WI] C2 C2X - L2[O] Q1 - L1[I] M8 C32 M2X C4X - L0[W] Q1 
+[ 26] Utilization = 0.03 | pJ/Compute =  118.137 | L4[WIO] C8 M256 - L3[WI] C2 C2X - L2[O] Q1 - L1[I] C64 M8 M2X C2X - L0[W] Q1 
+[  2] Utilization = 0.03 | pJ/Compute =  131.446 | L4[WIO] M64 C2 - L3[WI] M2 C8 C2X - L2[O] M16 C4 - L1[I] M2 C8 C4X - L0[W] Q1 
+[  4] Utilization = 0.02 | pJ/Compute =  118.987 | L4[WIO] C2 M64 - L3[WI] C8 M2 C2X - L2[O] C4 M16 - L1[I] C16 M2 C2X - L0[W] Q1 
+[  3] Utilization = 0.05 | pJ/Compute =  120.703 | L4[WIO] M32 C8 - L3[WI] M4 C2 C16X - L2[O] M4 C8 - L1[I] M4 M2X C2X - L0[W] Q1 
+[ 20] Utilization = 0.05 | pJ/Compute =  115.202 | L4[WIO] C8 M256 - L3[WI] C2 C2X - L2[O] Q1 - L1[I] M8 C16 M2X C8X - L0[W] Q1 
+[ 23] Utilization = 0.05 | pJ/Compute =  116.180 | L4[WIO] C8 M256 - L3[WI] C2 C2X - L2[O] Q1 - L1[I] C32 M8 M2X C4X - L0[W] Q1 
+[  2] Utilization = 0.03 | pJ/Compute =  117.031 | L4[WIO] C2 M64 - L3[WI] C8 M2 C2X - L2[O] C4 M16 - L1[I] M2 C8 C4X - L0[W] Q1 
+[  2] Utilization = 0.03 | pJ/Compute =  116.571 | L4[WIO] C2 M64 - L3[WI] M2 C8 C2X - L2[O] C4 M16 - L1[I] C8 M2 C4X - L0[W] Q1 
+[ 10] Utilization = 0.05 | pJ/Compute =  128.694 | L4[WIO] C2 M64 - L3[WI] M2 C8 C2X - L2[O] M16 C8 - L1[I] M2 C16X - L0[W] Q1 
+[ 18] Utilization = 0.05 | pJ/Compute =  120.103 | L4[WIO] M4 C128 - L3[WI] C4 M2X C4X - L2[O] M4 - L1[I] C2 M64 M2X - L0[W] Q1 
+[ 23] Utilization = 0.05 | pJ/Compute =  114.232 | L4[WIO] M4 C128 - L3[WI] C8 M2X - L2[O] M4 - L1[I] M64 M2X C4X - L0[W] Q1 
+[ 13] Utilization = 0.05 | pJ/Compute =  116.288 | L4[WIO] M4 C128 - L3[WI] C4 M2X C2X - L2[O] M4 C2 - L1[I] M64 M2X C2X - L0[W] Q1 
+[ 25] Utilization = 0.05 | pJ/Compute =  114.217 | L4[WIO] M128 - L3[WI] C512 M2X - L2[O] M4 - L1[I] M2 M2X C8X - L0[W] Q1 
+[ 13] Utilization = 0.05 | pJ/Compute =  113.480 | L4[WIO] M4 C256 - L3[WI] Q1 - L2[O] C2 - L1[I] C2 M256 M4X C4X - L0[W] Q1 
+[ 15] Utilization = 0.05 | pJ/Compute =  113.249 | L4[WIO] M4 C32 - L3[WI] Q1 - L2[O] C8 M256 - L1[I] M2 C2 M2X C8X - L0[W] Q1 
+[ 11] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  4] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 22] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 12] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  7] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  5] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  6] Utilization = 0.05 | pJ/Compute =  113.204 | L4[WIO] C2 M128 - L3[WI] M2 M2X C4X - L2[O] M4 - L1[I] C64 M2X C8X - L0[W] Q1 
+[ 24] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 14] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 27] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 16] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 23] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  1] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  0] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 18] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  2] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 26] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 20] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 19] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 10] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 13] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  9] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 21] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 15] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  3] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 25] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 17] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  8] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  6] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+
+
+Summary stats for best mapping found by mapper:
+  Utilization = 0.05 | pJ/Compute =  113.204
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/6b4eroot@d9309ac6b740:/workspace/Project_2026/6b4e# python3 Results_e Extract.py 
+[?2004l/workspace/Project_2026/6b4e/Results_Extract.py:63: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  df = df._append({'Folder': folder, 'TOPS/W': tops_per_watt, 'Cycles': cycles, 'Computes': computes, 'pJ_LMAC': pJ_MACC, 'pJ_PEWeightRegs': pJ_PEWeightRegs, 'pJ_PEAccuBuffer': pJ_PEAccuBuffer, 'pJ_PEInputBuffer': pJ_PEInputBuffer, 'pJ_GlobalBuffer': pJ_GlobalBuffer, 'pJ_DRAM': pJ_DRAM, 'pJ/Compute': pJ_per_compute, 'Energy': energy, 'Utilization': utilization, 'EDP': edp}, ignore_index=True)
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/6b4eroot@d9309ac6b740:/workspace/Project_2026/6b4e# cd.    d ..
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026root@d9309ac6b740:/workspace/Project_2026# cd 7b4e/
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/7b4eroot@d9309ac6b740:/workspace/Project_2026/7b4e# cd 7b4e/[3P..python3 Results_Extract.py [14P./script.sh \chmod +x script.sh 
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/7b4eroot@d9309ac6b740:/workspace/Project_2026/7b4e# ./script.sh 
+[?2004linput file: ../../arch/gemini_like.yaml
+input file: ../../problemCNN/AlexNet_layer2.yaml
+input file: ../../mapper/mapper.yaml
+input file: ../../constraints/constrains.yaml
+  _______                __                
+ /_  __(_)___ ___  ___  / /___  ____  ____ 
+  / / / / __ `__ \/ _ \/ / __ \/ __ \/ __ \
+ / / / / / / / / /  __/ / /_/ / /_/ / /_/ /
+/_/ /_/_/ /_/ /_/\___/_/\____/\____/ .___/ 
+                                  /_/      
+
+Problem configuration complete.
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+execute:/usr/local/bin/accelergy ../../arch/gemini_like.yaml ../../problemCNN/AlexNet_layer2.yaml ../../mapper/mapper.yaml ../../constraints/constrains.yaml --oprefix timeloop-mapper. -o ./ > timeloop-mapper.accelergy.log 2>&1
+Generate Accelergy ERT (energy reference table) to replace internal energy model.
+Generate Accelergy ART (area reference table) to replace internal area model.
+Architecture configuration complete.
+Sparse optimization configuration complete.
+Using threads = 28
+Mapper configuration complete.
+Initializing Index Factorization subspace.
+  Factorization options along problem dimension C = 3234
+  Factorization options along problem dimension M = 3003
+  Factorization options along problem dimension R = 7
+  Factorization options along problem dimension S = 7
+  Factorization options along problem dimension N = 1
+  Factorization options along problem dimension P = 84
+  Factorization options along problem dimension Q = 84
+Mapspace Dimension [IndexFactorization] Size: 3357762696288
+Mapspace Dimension [LoopPermutation] Size: 645241282560000
+Mapspace Dimension [Spatial] Size: 64
+Mapspace Dimension [DatatypeBypass] Size: 1
+Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 119920096296 Residue: 0
+Mapspace construction complete.
+Search configuration complete.
+[  9] Utilization = 0.06 | pJ/Compute =   37.247 | L4[WIO] M4 - L3[WI] Q27 P9 M2 S5 M4X - L2[O] P3 C32 R5 - L1[I] M2 C3 M4X - L0[W] Q1 
+[  3] Utilization = 0.12 | pJ/Compute =   33.550 | L4[WIO] M4 - L3[WI] M2 P9 S5 Q27 M4X - L2[O] C3 P3 R5 - L1[I] C16 M2 M4X C2X - L0[W] Q1 
+[  8] Utilization = 0.19 | pJ/Compute =   32.245 | L4[WIO] M4 - L3[WI] Q27 S5 M2 P9 M4X - L2[O] P3 C32 R5 - L1[I] M2 M4X C3X - L0[W] Q1 
+[  5] Utilization = 0.09 | pJ/Compute =   13.838 | L4[WIO] Q9 M2 R5 - L3[WI] M4 S5 P3X C2X - L2[O] C3 M8 - L1[I] P3 C16 M4X - L0[W] Q3 P3 
+[ 22] Utilization = 0.28 | pJ/Compute =   14.374 | L4[WIO] Q9 R5 M2 - L3[WI] M4 S5 P3X C2X - L2[O] M8 C4 - L1[I] C4 P3 M4X C3X - L0[W] Q3 P3 
+[ 27] Utilization = 0.19 | pJ/Compute =   10.457 | L4[WIO] Q9 R5 M2 - L3[WI] S5 M4 P3X C2X - L2[O] C24 M8 - L1[I] P3 M4X C2X - L0[W] Q3 P3 
+[  7] Utilization = 0.19 | pJ/Compute =   16.349 | L4[WIO] Q9 R5 M2 - L3[WI] M4 S5 P3X C2X - L2[O] M8 C3 - L1[I] P3 C8 M4X C2X - L0[W] Q3 P3 
+[ 25] Utilization = 0.09 | pJ/Compute =   20.713 | L4[WIO] Q9 R5 M2 - L3[WI] S5 M4 P3X C2X - L2[O] M8 C4 - L1[I] C12 P3 M4X - L0[W] Q3 P3 
+[  4] Utilization = 0.38 | pJ/Compute =    7.380 | L4[WIO] Q9 R5 M2 - L3[WI] M4 S5 P3X C2X - L2[O] C3 M8 - L1[I] C4 P3 M4X C4X - L0[W] Q3 P3 
+[ 20] Utilization = 0.38 | pJ/Compute =   13.640 | L4[WIO] Q9 M2 R5 - L3[WI] M4 S5 P3X C2X - L2[O] M8 C4 - L1[I] C3 P3 M4X C4X - L0[W] Q3 P3 
+[ 24] Utilization = 0.19 | pJ/Compute =   15.679 | L4[WIO] R5 Q9 M2 - L3[WI] M4 S5 P3X C2X - L2[O] M8 C4 - L1[I] C6 P3 M4X C2X - L0[W] Q3 P3 
+[ 22] Utilization = 0.28 | pJ/Compute =    7.784 | L4[WIO] R5 M2 Q9 - L3[WI] M4 S5 P3X C2X - L2[O] C4 M8 - L1[I] P3 C4 M4X C3X - L0[W] Q3 P3 
+[ 25] Utilization = 0.09 | pJ/Compute =   13.920 | L4[WIO] Q9 R5 M2 - L3[WI] M4 S5 P3X C2X - L2[O] C4 M8 - L1[I] P3 C12 M4X - L0[W] Q3 P3 
+[  6] Utilization = 0.25 | pJ/Compute =   31.593 | L4[WIO] M4 - L3[WI] Q27 P9 S5 M2 M4X - L2[O] R5 P3 C3 - L1[I] C8 M2 M4X C4X - L0[W] Q1 
+[ 20] Utilization = 0.38 | pJ/Compute =    7.132 | L4[WIO] M2 R5 Q9 - L3[WI] M4 S5 P3X C2X - L2[O] C4 M8 - L1[I] P3 C3 M4X C4X - L0[W] Q3 P3 
+[  4] Utilization = 0.38 | pJ/Compute =    6.461 | L4[WIO] R5 M2 Q9 - L3[WI] M4 S5 P3X C2X - L2[O] C3 M8 - L1[I] C4 P3 M4X C4X - L0[W] Q3 P3 
+[ 17] Utilization = 0.62 | pJ/Compute =   13.876 | L4[WIO] M2 C6 - L3[WI] P3 Q27 M8 C2 R5 S5X C2X - L2[O] Q1 - L1[I] C4 P9 M16X - L0[W] Q1 
+[ 17] Utilization = 0.62 | pJ/Compute =   13.858 | L4[WIO] C6 M2 - L3[WI] P3 Q27 M8 C2 R5 S5X C2X - L2[O] Q1 - L1[I] C4 P9 M16X - L0[W] Q1 
+[ 16] Utilization = 0.70 | pJ/Compute =   11.704 | L4[WIO] M8 - L3[WI] P3 M8 C3 Q3X S5X - L2[O] M2 C8 - L1[I] M2 Q3 R5 P3X C4X - L0[W] Q3 P3 
+[ 16] Utilization = 0.70 | pJ/Compute =    9.734 | L4[WIO] M8 - L3[WI] P3 C3 M8 Q3X S5X - L2[O] C8 M2 - L1[I] R5 Q3 M2 P3X C4X - L0[W] Q3 P3 
+[ 16] Utilization = 0.70 | pJ/Compute =    9.337 | L4[WIO] M8 - L3[WI] M8 P3 C3 Q3X S5X - L2[O] C8 M2 - L1[I] R5 M2 Q3 P3X C4X - L0[W] Q3 P3 
+[ 13] Utilization = 0.75 | pJ/Compute =   15.939 | L4[WIO] Q3 S5 M2 C2 - L3[WI] M8 C2 P3 M8X C2X - L2[O] R5 P3 Q3 - L1[I] C6 P3 Q3X M2X C2X - L0[W] Q1 
+[ 13] Utilization = 0.75 | pJ/Compute =   13.615 | L4[WIO] M2 S5 C2 Q3 - L3[WI] C2 P3 M8 M8X C2X - L2[O] Q3 P3 R5 - L1[I] C6 P3 Q3X M2X C2X - L0[W] Q1 
+[ 19] Utilization = 0.94 | pJ/Compute =   11.127 | L4[WIO] S5 P3 C4 M4 - L3[WI] Q3 C2 M2 M8X C2X - L2[O] P3 C6 - L1[I] M4 Q3 Q3X R5X - L0[W] P3 
+[ 19] Utilization = 0.94 | pJ/Compute =    9.657 | L4[WIO] S5 C4 P3 M4 - L3[WI] M2 Q3 C2 M8X C2X - L2[O] C6 P3 - L1[I] M4 Q3 Q3X R5X - L0[W] P3 
+[ 18] Utilization = 1.00 | pJ/Compute =   15.991 | L4[WIO] S5 Q3 M2 C2 - L3[WI] C2 P9 M2 M16X - L2[O] Q3 P3 M2 - L1[I] C3 R5 M2X C8X - L0[W] Q3 
+[ 18] Utilization = 1.00 | pJ/Compute =   15.762 | L4[WIO] C2 S5 M2 Q3 - L3[WI] M2 C2 P9 M16X - L2[O] Q3 P3 M2 - L1[I] C3 R5 M2X C8X - L0[W] Q3 
+[ 18] Utilization = 1.00 | pJ/Compute =   15.239 | L4[WIO] C2 Q3 M2 S5 - L3[WI] P9 M2 C2 M16X - L2[O] Q3 M2 P3 - L1[I] C3 R5 M2X C8X - L0[W] Q3 
+[ 24] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  8] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 17] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 12] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 14] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 15] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  6] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 20] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  5] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 25] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 23] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 27] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 21] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 11] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  0] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 22] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 10] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  7] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 16] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 19] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  2] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  3] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 13] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 26] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  9] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  1] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 18] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  4] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+
+
+Summary stats for best mapping found by mapper:
+  Utilization = 1.00 | pJ/Compute =   15.239
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/7b4eroot@d9309ac6b740:/workspace/Project_2026/7b4e# python3 Results_Extract.py 
+[?2004l/workspace/Project_2026/7b4e/Results_Extract.py:63: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  df = df._append({'Folder': folder, 'TOPS/W': tops_per_watt, 'Cycles': cycles, 'Computes': computes, 'pJ_LMAC': pJ_MACC, 'pJ_PEWeightRegs': pJ_PEWeightRegs, 'pJ_PEAccuBuffer': pJ_PEAccuBuffer, 'pJ_PEInputBuffer': pJ_PEInputBuffer, 'pJ_GlobalBuffer': pJ_GlobalBuffer, 'pJ_DRAM': pJ_DRAM, 'pJ/Compute': pJ_per_compute, 'Energy': energy, 'Utilization': utilization, 'EDP': edp}, ignore_index=True)
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/7b4eroot@d9309ac6b740:/workspace/Project_2026/7b4e# python3 Results_Extract.py [15P./script.sh python3 Results_Extract.py 
+[?2004lCSV file saved to: Results/summary_stats.csv
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/7b4eroot@d9309ac6b740:/workspace/Project_2026/7b4e# cd ..
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026root@d9309ac6b740:/workspace/Project_2026# cd 8b4e/
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/8b4eroot@d9309ac6b740:/workspace/Project_2026/8b4e# cd 8b4e/[3P..python3 Results_Extract.py [15P./script.sh [7@chmod +x script.sh 
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/8b4eroot@d9309ac6b740:/workspace/Project_2026/8b4e# chmod +x script.sh [11Pd 8b4e/[3P..python3 Results_Extract.py [15P./script.sh 
+[?2004linput file: ../../arch/gemini_like.yaml
+input file: ../../problemCNN/AlexNet_layer3.yaml
+input file: ../../mapper/mapper.yaml
+input file: ../../constraints/constrains.yaml
+  _______                __                
+ /_  __(_)___ ___  ___  / /___  ____  ____ 
+  / / / / __ `__ \/ _ \/ / __ \/ __ \/ __ \
+ / / / / / / / / /  __/ / /_/ / /_/ / /_/ /
+/_/ /_/_/ /_/ /_/\___/_/\____/\____/ .___/ 
+                                  /_/      
+
+Problem configuration complete.
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+execute:/usr/local/bin/accelergy ../../arch/gemini_like.yaml ../../problemCNN/AlexNet_layer3.yaml ../../mapper/mapper.yaml ../../constraints/constrains.yaml --oprefix timeloop-mapper. -o ./ > timeloop-mapper.accelergy.log 2>&1
+Generate Accelergy ERT (energy reference table) to replace internal energy model.
+Generate Accelergy ART (area reference table) to replace internal area model.
+Architecture configuration complete.
+Sparse optimization configuration complete.
+Using threads = 28
+Mapper configuration complete.
+Initializing Index Factorization subspace.
+  Factorization options along problem dimension C = 3003
+  Factorization options along problem dimension M = 12012
+  Factorization options along problem dimension R = 7
+  Factorization options along problem dimension S = 7
+  Factorization options along problem dimension N = 1
+  Factorization options along problem dimension P = 7
+  Factorization options along problem dimension Q = 7
+Mapspace Dimension [IndexFactorization] Size: 86608958436
+Mapspace Dimension [LoopPermutation] Size: 645241282560000
+Mapspace Dimension [Spatial] Size: 64
+Mapspace Dimension [DatatypeBypass] Size: 1
+Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 3093177087 Residue: 0
+Mapspace construction complete.
+Search configuration complete.
+[ 20] Utilization = 0.09 | pJ/Compute =   41.830 | L4[WIO] C4 P13 M8 - L3[WI] C4 Q13 M6 C2X - L2[O] S3 - L1[I] C2 M8 R3X C4X - L0[W] Q1 
+[ 13] Utilization = 0.01 | pJ/Compute =   44.340 | L4[WIO] M8 P13 C4 - L3[WI] C4 Q13 M6 - L2[O] C16 S3 - L1[I] M8 R3X - L0[W] Q1 
+[  6] Utilization = 0.05 | pJ/Compute =   41.708 | L4[WIO] P13 M8 C4 - L3[WI] Q13 M6 C4 - L2[O] S3 C4 - L1[I] M8 R3X C4X - L0[W] Q1 
+[ 23] Utilization = 0.02 | pJ/Compute =   44.373 | L4[WIO] M8 P13 C4 - L3[WI] C4 Q13 M6 C2X - L2[O] S3 - L1[I] C8 M8 R3X - L0[W] Q1 
+[ 14] Utilization = 0.06 | pJ/Compute =   46.316 | L4[WIO] M2 C32 R3 - L3[WI] M8 C2 M4X C4X - L2[O] Q13 M3 - L1[I] P13 M2 S3 - L0[W] Q1 
+[  9] Utilization = 0.01 | pJ/Compute =   43.755 | L4[WIO] C4 P13 M8 - L3[WI] M6 C4 Q13 - L2[O] C4 S3 - L1[I] C4 M8 R3X - L0[W] Q1 
+[ 19] Utilization = 0.03 | pJ/Compute =   63.107 | L4[WIO] R3 M2 C32 - L3[WI] C4 M8 M4X C2X - L2[O] M3 Q13 - L1[I] S3 P13 M2 - L0[W] Q1 
+[  8] Utilization = 0.02 | pJ/Compute =   42.450 | L4[WIO] C4 P13 M8 - L3[WI] M6 C4 Q13 - L2[O] C4 S3 - L1[I] C2 M8 R3X C2X - L0[W] Q1 
+[ 16] Utilization = 0.03 | pJ/Compute =   34.786 | L4[WIO] M2 C32 R3 - L3[WI] C4 M8 M4X - L2[O] Q13 M3 - L1[I] M2 S3 P13 C2X - L0[W] Q1 
+[ 11] Utilization = 0.02 | pJ/Compute =   43.036 | L4[WIO] M8 P13 C4 - L3[WI] C4 Q13 M6 - L2[O] C8 S3 - L1[I] M8 R3X C2X - L0[W] Q1 
+[ 17] Utilization = 0.28 | pJ/Compute =   33.788 | L4[WIO] M8 R3 - L3[WI] Q13 C2 M2 M6X - L2[O] C32 P13 - L1[I] C4 S3X M4X - L0[W] Q1 
+[ 12] Utilization = 0.01 | pJ/Compute =   43.755 | L4[WIO] C4 P13 M8 - L3[WI] M6 C4 Q13 - L2[O] C8 S3 - L1[I] C2 M8 R3X - L0[W] Q1 
+[ 22] Utilization = 0.05 | pJ/Compute =   43.068 | L4[WIO] M8 P13 C4 - L3[WI] C4 Q13 M6 C2X - L2[O] S3 - L1[I] C4 M8 R3X C2X - L0[W] Q1 
+[ 27] Utilization = 0.28 | pJ/Compute =   33.788 | L4[WIO] M8 R3 - L3[WI] Q13 C2 M2 M6X - L2[O] C16 P13 - L1[I] C8 S3X M4X - L0[W] Q1 
+[ 26] Utilization = 0.09 | pJ/Compute =   41.715 | L4[WIO] P13 M8 C4 - L3[WI] Q13 M6 C4 C2X - L2[O] S3 C2 - L1[I] M8 R3X C4X - L0[W] Q1 
+[  3] Utilization = 0.01 | pJ/Compute =   43.665 | L4[WIO] P13 M8 C4 - L3[WI] Q13 M6 C4 - L2[O] S3 C2 - L1[I] M8 C8 R3X - L0[W] Q1 
+[ 13] Utilization = 0.01 | pJ/Compute =   43.755 | L4[WIO] C4 P13 M8 - L3[WI] C4 Q13 M6 - L2[O] C16 S3 - L1[I] M8 R3X - L0[W] Q1 
+[  9] Utilization = 0.01 | pJ/Compute =   38.000 | L4[WIO] M8 C4 P13 - L3[WI] M6 C4 Q13 - L2[O] C4 S3 - L1[I] C4 M8 R3X - L0[W] Q1 
+[ 20] Utilization = 0.09 | pJ/Compute =   36.075 | L4[WIO] C4 M8 P13 - L3[WI] Q13 C4 M6 C2X - L2[O] S3 - L1[I] M8 C2 R3X C4X - L0[W] Q1 
+[ 25] Utilization = 0.25 | pJ/Compute =   35.779 | L4[WIO] R3 M2 C16 - L3[WI] M8 M4X - L2[O] Q13 M3 - L1[I] P13 M2 S3 C16X - L0[W] Q1 
+[  5] Utilization = 0.02 | pJ/Compute =   51.395 | L4[WIO] C32 M2 R3 - L3[WI] C2 M8 M4X - L2[O] M3 Q13 - L1[I] P13 C4 S3 M2 - L0[W] Q1 
+[ 18] Utilization = 0.02 | pJ/Compute =   61.920 | L4[WIO] M2 C32 R3 - L3[WI] C4 M8 M4X - L2[O] C2 Q13 M3 - L1[I] S3 P13 M2 - L0[W] Q1 
+[  1] Utilization = 0.19 | pJ/Compute =   16.558 | L4[WIO] P13 C8 M16 - L3[WI] M2 S3 M3X - L2[O] R3 C2 - L1[I] C2 M2 M2X C8X - L0[W] Q13 
+[ 19] Utilization = 0.03 | pJ/Compute =   39.887 | L4[WIO] R3 M2 C32 - L3[WI] C4 M8 M4X C2X - L2[O] M3 Q13 - L1[I] M2 S3 P13 - L0[W] Q1 
+[  6] Utilization = 0.05 | pJ/Compute =   36.043 | L4[WIO] M8 C4 P13 - L3[WI] Q13 C4 M6 - L2[O] S3 C4 - L1[I] M8 R3X C4X - L0[W] Q1 
+[ 23] Utilization = 0.02 | pJ/Compute =   43.787 | L4[WIO] C4 P13 M8 - L3[WI] C4 Q13 M6 C2X - L2[O] S3 - L1[I] C8 M8 R3X - L0[W] Q1 
+[ 27] Utilization = 0.28 | pJ/Compute =   33.445 | L4[WIO] R3 M8 - L3[WI] M2 Q13 C2 M6X - L2[O] C16 P13 - L1[I] C8 S3X M4X - L0[W] Q1 
+[ 17] Utilization = 0.28 | pJ/Compute =   33.614 | L4[WIO] R3 M8 - L3[WI] C2 M2 Q13 M6X - L2[O] C32 P13 - L1[I] C4 S3X M4X - L0[W] Q1 
+[ 11] Utilization = 0.02 | pJ/Compute =   42.450 | L4[WIO] C4 P13 M8 - L3[WI] C4 Q13 M6 - L2[O] C8 S3 - L1[I] M8 R3X C2X - L0[W] Q1 
+[  0] Utilization = 0.05 | pJ/Compute =   41.798 | L4[WIO] C4 P13 M8 - L3[WI] M6 C4 Q13 - L2[O] C2 S3 - L1[I] C2 M8 R3X C4X - L0[W] Q1 
+[  2] Utilization = 0.02 | pJ/Compute =   42.361 | L4[WIO] P13 M8 C4 - L3[WI] Q13 M6 C4 - L2[O] S3 C2 - L1[I] M8 C4 R3X C2X - L0[W] Q1 
+[ 20] Utilization = 0.09 | pJ/Compute =   35.375 | L4[WIO] C4 M8 P13 - L3[WI] Q13 M6 C4 C2X - L2[O] S3 - L1[I] M8 C2 R3X C4X - L0[W] Q1 
+[  8] Utilization = 0.02 | pJ/Compute =   36.695 | L4[WIO] M8 C4 P13 - L3[WI] M6 C4 Q13 - L2[O] C4 S3 - L1[I] C2 M8 R3X C2X - L0[W] Q1 
+[ 12] Utilization = 0.01 | pJ/Compute =   38.000 | L4[WIO] M8 C4 P13 - L3[WI] M6 C4 Q13 - L2[O] C8 S3 - L1[I] C2 M8 R3X - L0[W] Q1 
+[ 22] Utilization = 0.05 | pJ/Compute =   42.483 | L4[WIO] C4 P13 M8 - L3[WI] C4 Q13 M6 C2X - L2[O] S3 - L1[I] C4 M8 R3X C2X - L0[W] Q1 
+[  3] Utilization = 0.01 | pJ/Compute =   43.080 | L4[WIO] P13 C4 M8 - L3[WI] M6 Q13 C4 - L2[O] S3 C2 - L1[I] M8 C8 R3X - L0[W] Q1 
+[  4] Utilization = 0.03 | pJ/Compute =   42.100 | L4[WIO] R3 C32 M2 - L3[WI] M8 C2 M4X - L2[O] M3 Q13 - L1[I] M2 S3 P13 C2 C2X - L0[W] Q1 
+[ 13] Utilization = 0.01 | pJ/Compute =   43.665 | L4[WIO] P13 M8 C4 - L3[WI] Q13 M6 C4 - L2[O] S3 C16 - L1[I] M8 R3X - L0[W] Q1 
+[ 18] Utilization = 0.02 | pJ/Compute =   49.341 | L4[WIO] C32 M2 R3 - L3[WI] M8 C4 M4X - L2[O] Q13 M3 C2 - L1[I] M2 P13 S3 - L0[W] Q1 
+[  7] Utilization = 0.03 | pJ/Compute =   24.281 | L4[WIO] R3 C32 M2 - L3[WI] C2 M8 M4X - L2[O] M3 C2 Q13 - L1[I] M2 S3 P13 C2X - L0[W] Q1 
+[ 13] Utilization = 0.01 | pJ/Compute =   38.000 | L4[WIO] M8 C4 P13 - L3[WI] Q13 C4 M6 - L2[O] S3 C16 - L1[I] M8 R3X - L0[W] Q1 
+[  2] Utilization = 0.02 | pJ/Compute =   41.775 | L4[WIO] P13 C4 M8 - L3[WI] M6 Q13 C4 - L2[O] S3 C2 - L1[I] M8 C4 R3X C2X - L0[W] Q1 
+[  0] Utilization = 0.05 | pJ/Compute =   36.043 | L4[WIO] M8 C4 P13 - L3[WI] M6 C4 Q13 - L2[O] C2 S3 - L1[I] C2 M8 R3X C4X - L0[W] Q1 
+[  4] Utilization = 0.03 | pJ/Compute =   24.086 | L4[WIO] M2 R3 C32 - L3[WI] C2 M8 M4X - L2[O] Q13 M3 - L1[I] S3 M2 C2 P13 C2X - L0[W] Q1 
+[ 25] Utilization = 0.75 | pJ/Compute =   40.646 | L4[WIO] M4 R3 C2 - L3[WI] Q13 M2 P13 M6X C2X - L2[O] M8 C2 - L1[I] S3 C2 C16X - L0[W] Q1 
+[ 25] Utilization = 0.75 | pJ/Compute =   32.639 | L4[WIO] C2 R3 M4 - L3[WI] M2 P13 Q13 M6X C2X - L2[O] C2 M8 - L1[I] C2 S3 C16X - L0[W] Q1 
+[  4] Utilization = 0.75 | pJ/Compute =   32.336 | L4[WIO] R3 M4 C2 - L3[WI] P13 Q13 M2 M6X C2X - L2[O] M8 - L1[I] C4 S3 C16X - L0[W] Q1 
+[  4] Utilization = 0.75 | pJ/Compute =   32.130 | L4[WIO] C2 M4 R3 - L3[WI] Q13 P13 M2 M6X C2X - L2[O] M8 - L1[I] S3 C4 C16X - L0[W] Q1 
+[  4] Utilization = 0.75 | pJ/Compute =   32.085 | L4[WIO] C2 R3 M4 - L3[WI] P13 Q13 M2 M6X C2X - L2[O] M8 - L1[I] C4 S3 C16X - L0[W] Q1 
+[ 26] Utilization = 0.75 | pJ/Compute =   31.186 | L4[WIO] M4 P13 - L3[WI] C2 R3X M4X - L2[O] M2 Q13 C8 - L1[I] C2 M6 S3 M2X C8X - L0[W] Q1 
+[ 26] Utilization = 0.75 | pJ/Compute =   30.628 | L4[WIO] M4 P13 - L3[WI] C2 R3X M4X - L2[O] C8 M2 Q13 - L1[I] S3 C2 M6 M2X C8X - L0[W] Q1 
+[ 13] Utilization = 0.81 | pJ/Compute =    8.360 | L4[WIO] C4 Q13 - L3[WI] Q1 P13X - L2[O] R3 M96 - L1[I] C16 S3 M4X C4X - L0[W] Q1 
+[  3] Utilization = 1.00 | pJ/Compute =   32.797 | L4[WIO] C8 R3 Q13 - L3[WI] P13 M16X - L2[O] Q1 - L1[I] S3 C2 M24 C16X - L0[W] Q1 
+[ 16] Utilization = 1.00 | pJ/Compute =   32.407 | L4[WIO] M4 Q13 - L3[WI] P13 C2 S3 C16X - L2[O] R3 - L1[I] M12 C4 M8X C2X - L0[W] Q1 
+[ 27] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 24] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 20] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  5] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 19] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  6] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 14] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 10] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 25] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  4] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 13] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 12] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 23] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 18] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  7] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  0] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  8] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 17] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 26] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 11] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 21] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 22] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  1] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  3] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  9] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 16] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  2] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 15] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+
+
+Summary stats for best mapping found by mapper:
+  Utilization = 1.00 | pJ/Compute =   32.407
+Running python post-processing script...
+CSV file saved to: Results/summary_stats.csv
+Done.
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/8b4eroot@d9309ac6b740:/workspace/Project_2026/8b4e# cd ..
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026root@d9309ac6b740:/workspace/Project_2026# cd 9b4e/
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/9b4eroot@d9309ac6b740:/workspace/Project_2026/9b4e# cd 9b4e/[3P.../script.sh [7@chmod +x script.sh 
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/9b4eroot@d9309ac6b740:/workspace/Project_2026/9b4e# chmod +x script.sh [11Pd 9b4e/[3P.../script.sh 
+[?2004linput file: ../../arch/gemini_like.yaml
+input file: ../../problemCNN/AlexNet_layer1.yaml
+input file: ../../mapper/mapper.yaml
+input file: ../../constraints/constrains.yaml
+  _______                __                
+ /_  __(_)___ ___  ___  / /___  ____  ____ 
+  / / / / __ `__ \/ _ \/ / __ \/ __ \/ __ \
+ / / / / / / / / /  __/ / /_/ / /_/ / /_/ /
+/_/ /_/_/ /_/ /_/\___/_/\____/\____/ .___/ 
+                                  /_/      
+
+Problem configuration complete.
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+execute:/usr/local/bin/accelergy ../../arch/gemini_like.yaml ../../problemCNN/AlexNet_layer1.yaml ../../mapper/mapper.yaml ../../constraints/constrains.yaml --oprefix timeloop-mapper. -o ./ > timeloop-mapper.accelergy.log 2>&1
+Generate Accelergy ERT (energy reference table) to replace internal energy model.
+Generate Accelergy ART (area reference table) to replace internal area model.
+Architecture configuration complete.
+Sparse optimization configuration complete.
+Using threads = 28
+Mapper configuration complete.
+Initializing Index Factorization subspace.
+  Factorization options along problem dimension C = 7
+  Factorization options along problem dimension M = 3234
+  Factorization options along problem dimension R = 7
+  Factorization options along problem dimension S = 7
+  Factorization options along problem dimension N = 1
+  Factorization options along problem dimension P = 49
+  Factorization options along problem dimension Q = 49
+Mapspace Dimension [IndexFactorization] Size: 2663338062
+Mapspace Dimension [LoopPermutation] Size: 645241282560000
+Mapspace Dimension [Spatial] Size: 64
+Mapspace Dimension [DatatypeBypass] Size: 1
+Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 95119217 Residue: 14
+Mapspace construction complete.
+Search configuration complete.
+[  3] Utilization = 0.03 | pJ/Compute =   46.266 | L4[WIO] P11 Q5 M3 - L3[WI] P5 S11 M8X - L2[O] M4 C3 - L1[I] R11 - L0[W] Q11 
+[  6] Utilization = 0.03 | pJ/Compute =   34.814 | L4[WIO] M3 P11 C3 Q5 - L3[WI] S11 P5 M8X - L2[O] M4 - L1[I] R11 - L0[W] Q11 
+[  5] Utilization = 0.03 | pJ/Compute =   34.538 | L4[WIO] M3 P11 Q5 - L3[WI] C3 S11 P5 M8X - L2[O] M4 - L1[I] R11 - L0[W] Q11 
+[  3] Utilization = 0.03 | pJ/Compute =   26.957 | L4[WIO] P11 M3 Q5 - L3[WI] S11 P5 M8X - L2[O] C3 M4 - L1[I] R11 - L0[W] Q11 
+[  5] Utilization = 0.03 | pJ/Compute =   24.299 | L4[WIO] P11 Q5 M3 - L3[WI] P5 S11 C3 M8X - L2[O] M4 - L1[I] R11 - L0[W] Q11 
+[ 19] Utilization = 0.47 | pJ/Compute =    7.782 | L4[WIO] M4 - L3[WI] C3 Q5 M3 P11X - L2[O] P5 - L1[I] S11 M8 R11X - L0[W] Q11 
+[  2] Utilization = 0.09 | pJ/Compute =   16.988 | L4[WIO] Q5 M2 S11 - L3[WI] Q11 P5 M3X - L2[O] M2 - L1[I] R11 C3 M8X - L0[W] P11 
+[ 18] Utilization = 0.19 | pJ/Compute =   46.315 | L4[WIO] P11 M12 S11 R11 - L3[WI] Q1 Q5X C3X - L2[O] Q11 - L1[I] M4 P5X M2X - L0[W] Q1 
+[  6] Utilization = 0.03 | pJ/Compute =   24.100 | L4[WIO] C3 P11 M3 Q5 - L3[WI] P5 S11 M8X - L2[O] M4 - L1[I] R11 - L0[W] Q11 
+[  5] Utilization = 0.03 | pJ/Compute =   23.042 | L4[WIO] M3 Q5 P11 - L3[WI] P5 S11 C3 M8X - L2[O] M4 - L1[I] R11 - L0[W] Q11 
+[ 20] Utilization = 0.47 | pJ/Compute =    8.149 | L4[WIO] M4 C3 - L3[WI] M3 Q5 P11X - L2[O] P5 - L1[I] S11 M8 R11X - L0[W] Q11 
+[ 13] Utilization = 0.04 | pJ/Compute =   36.792 | L4[WIO] Q11 P5 M2 C3 - L3[WI] M8 R11 - L2[O] S11 Q5 - L1[I] M6 P11X - L0[W] Q1 
+[  4] Utilization = 0.28 | pJ/Compute =   18.206 | L4[WIO] Q5 S11 M2 - L3[WI] Q11 P5 M3X C3X - L2[O] M2 - L1[I] R11 M8X - L0[W] P11 
+[ 19] Utilization = 0.47 | pJ/Compute =    7.067 | L4[WIO] M4 - L3[WI] Q5 M3 C3 P11X - L2[O] P5 - L1[I] S11 M8 R11X - L0[W] Q11 
+[  6] Utilization = 0.03 | pJ/Compute =   23.824 | L4[WIO] C3 M3 P11 Q5 - L3[WI] P5 S11 M8X - L2[O] M4 - L1[I] R11 - L0[W] Q11 
+[ 16] Utilization = 0.15 | pJ/Compute =   49.876 | L4[WIO] P11 S11 M12 R11 - L3[WI] Q1 Q5X - L2[O] Q11 - L1[I] M4 C3 P5X M2X - L0[W] Q1 
+[ 11] Utilization = 0.13 | pJ/Compute =   35.908 | L4[WIO] P5 Q11 M2 - L3[WI] M8 R11 C3X - L2[O] Q5 S11 - L1[I] M6 P11X - L0[W] Q1 
+[ 10] Utilization = 0.04 | pJ/Compute =   38.184 | L4[WIO] P5 M2 Q11 - L3[WI] R11 M8 - L2[O] Q5 C3 S11 - L1[I] M6 P11X - L0[W] Q1 
+[ 17] Utilization = 0.47 | pJ/Compute =    7.067 | L4[WIO] M4 - L3[WI] M3 Q5 P11X - L2[O] C3 P5 - L1[I] S11 M8 R11X - L0[W] Q11 
+[ 26] Utilization = 0.05 | pJ/Compute =   26.160 | L4[WIO] S11 Q5 M2 - L3[WI] C3 P5 Q11 M3X - L2[O] M2 - L1[I] R11 M2 M4X - L0[W] P11 
+[  9] Utilization = 0.04 | pJ/Compute =   39.469 | L4[WIO] Q11 P5 M2 - L3[WI] R11 M8 - L2[O] S11 Q5 - L1[I] C3 M6 P11X - L0[W] Q1 
+[ 23] Utilization = 0.05 | pJ/Compute =   17.362 | L4[WIO] M2 Q5 S11 - L3[WI] P5 Q11 M3X - L2[O] M2 - L1[I] M2 R11 C3 M4X - L0[W] P11 
+[  6] Utilization = 0.03 | pJ/Compute =   23.756 | L4[WIO] M3 C3 Q5 P11 - L3[WI] P5 S11 M8X - L2[O] M4 - L1[I] R11 - L0[W] Q11 
+[ 25] Utilization = 0.14 | pJ/Compute =   17.639 | L4[WIO] Q5 M2 S11 - L3[WI] P5 Q11 M3X C3X - L2[O] M2 - L1[I] R11 M2 M4X - L0[W] P11 
+[ 13] Utilization = 0.04 | pJ/Compute =   35.538 | L4[WIO] Q11 M2 C3 P5 - L3[WI] M8 R11 - L2[O] Q5 S11 - L1[I] M6 P11X - L0[W] Q1 
+[ 20] Utilization = 0.47 | pJ/Compute =    7.782 | L4[WIO] C3 M4 - L3[WI] M3 Q5 P11X - L2[O] P5 - L1[I] S11 M8 R11X - L0[W] Q11 
+[ 12] Utilization = 0.04 | pJ/Compute =   35.327 | L4[WIO] P5 M2 Q11 - L3[WI] C3 M8 R11 - L2[O] S11 Q5 - L1[I] M6 P11X - L0[W] Q1 
+[ 27] Utilization = 0.05 | pJ/Compute =   27.376 | L4[WIO] Q5 S11 M2 C3 - L3[WI] P5 Q11 M3X - L2[O] M2 - L1[I] M2 R11 M4X - L0[W] P11 
+[ 10] Utilization = 0.04 | pJ/Compute =   35.897 | L4[WIO] P5 Q11 M2 - L3[WI] M8 R11 - L2[O] S11 C3 Q5 - L1[I] M6 P11X - L0[W] Q1 
+[ 12] Utilization = 0.04 | pJ/Compute =   34.612 | L4[WIO] P5 M2 Q11 - L3[WI] M8 R11 C3 - L2[O] Q5 S11 - L1[I] M6 P11X - L0[W] Q1 
+[  9] Utilization = 0.04 | pJ/Compute =   34.823 | L4[WIO] Q11 M2 P5 - L3[WI] M8 R11 - L2[O] S11 Q5 - L1[I] M6 C3 P11X - L0[W] Q1 
+[  2] Utilization = 0.69 | pJ/Compute =   23.269 | L4[WIO] S11 - L3[WI] M2 P55 Q11X - L2[O] M3 R11 - L1[I] Q5 C3 M16X - L0[W] Q1 
+[  2] Utilization = 0.69 | pJ/Compute =   19.162 | L4[WIO] S11 - L3[WI] M2 P55 Q11X - L2[O] R11 M3 - L1[I] Q5 C3 M16X - L0[W] Q1 
+[  2] Utilization = 0.69 | pJ/Compute =   16.605 | L4[WIO] S11 - L3[WI] P55 M2 Q11X - L2[O] R11 M3 - L1[I] C3 Q5 M16X - L0[W] Q1 
+[ 25] Utilization = 0.70 | pJ/Compute =   13.051 | L4[WIO] Q5 - L3[WI] M4 Q11 S11 M4X C3X - L2[O] M2 R11 - L1[I] Q1 P5X M3X - L0[W] P11 
+[ 22] Utilization = 0.70 | pJ/Compute =   12.320 | L4[WIO] P11 - L3[WI] M2 Q5 P5X M3X - L2[O] Q11 M4 - L1[I] R11 S11 M4X C3X - L0[W] Q1 
+[ 18] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  4] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 11] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  6] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  1] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  2] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  8] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 15] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 13] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 25] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  5] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 24] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 19] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 23] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 27] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  3] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 16] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 10] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 26] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 20] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 17] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 22] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 12] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  9] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  0] STATEMENT: 5000000 invalid mappings (4914643 fanout, 85357 capacity) found since the last valid mapping, terminating search.
+[  7] STATEMENT: 5000000 invalid mappings (4912963 fanout, 87037 capacity) found since the last valid mapping, terminating search.
+[ 21] STATEMENT: 5000000 invalid mappings (4912269 fanout, 87731 capacity) found since the last valid mapping, terminating search.
+[ 14] STATEMENT: 5000000 invalid mappings (4914748 fanout, 85252 capacity) found since the last valid mapping, terminating search.
+
+
+Summary stats for best mapping found by mapper:
+  Utilization = 0.70 | pJ/Compute =   12.320
+Running python post-processing script...
+CSV file saved to: Results/summary_stats.csv
+Done.
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/9b4eroot@d9309ac6b740:/workspace/Project_2026/9b4e# cd ..
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026root@d9309ac6b740:/workspace/Project_2026# cd 10b6e/
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/10b6eroot@d9309ac6b740:/workspace/Project_2026/10b6e# cd 10b6e/[4P.../script.sh [7@chmod +x script.sh 
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/10b6eroot@d9309ac6b740:/workspace/Project_2026/10b6e# chmod +x script.sh [10Pd 10b6e/cd ..
+[?2004lbash: cd: too many arguments
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/10b6eroot@d9309ac6b740:/workspace/Project_2026/10b6e# cd ..
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026root@d9309ac6b740:/workspace/Project_2026# cd 7b4e/
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/7b4eroot@d9309ac6b740:/workspace/Project_2026/7b4e# cd 7b4e/[3P..[9@10b6e/cd ..hmod +x script.sh [10Pd 10b6e/hmod +x script.sh 
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/7b4eroot@d9309ac6b740:/workspace/Project_2026/7b4e# chmod +x script.sh [11Pd 7b4e/[3P..[9@10b6e/cd ..hmod +x script.sh [10Pd 10b6e/[4P.../script.sh 
+[?2004linput file: ../../arch/gemini_like.yaml
+input file: ../../problemCNN/AlexNet_layer2.yaml
+input file: ../../mapper/mapper.yaml
+input file: ../../constraints/constrains.yaml
+  _______                __                
+ /_  __(_)___ ___  ___  / /___  ____  ____ 
+  / / / / __ `__ \/ _ \/ / __ \/ __ \/ __ \
+ / / / / / / / / /  __/ / /_/ / /_/ / /_/ /
+/_/ /_/_/ /_/ /_/\___/_/\____/\____/ .___/ 
+                                  /_/      
+
+Problem configuration complete.
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+execute:/usr/local/bin/accelergy ../../arch/gemini_like.yaml ../../problemCNN/AlexNet_layer2.yaml ../../mapper/mapper.yaml ../../constraints/constrains.yaml --oprefix timeloop-mapper. -o ./ > timeloop-mapper.accelergy.log 2>&1
+Generate Accelergy ERT (energy reference table) to replace internal energy model.
+Generate Accelergy ART (area reference table) to replace internal area model.
+Architecture configuration complete.
+Sparse optimization configuration complete.
+Using threads = 28
+Mapper configuration complete.
+Initializing Index Factorization subspace.
+  Factorization options along problem dimension C = 3234
+  Factorization options along problem dimension M = 3003
+  Factorization options along problem dimension R = 7
+  Factorization options along problem dimension S = 7
+  Factorization options along problem dimension N = 1
+  Factorization options along problem dimension P = 84
+  Factorization options along problem dimension Q = 84
+Mapspace Dimension [IndexFactorization] Size: 3357762696288
+Mapspace Dimension [LoopPermutation] Size: 645241282560000
+Mapspace Dimension [Spatial] Size: 64
+Mapspace Dimension [DatatypeBypass] Size: 1
+Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 119920096296 Residue: 0
+Mapspace construction complete.
+Search configuration complete.
+[  9] Utilization = 0.06 | pJ/Compute =   37.247 | L4[WIO] M4 - L3[WI] Q27 P9 M2 S5 M4X - L2[O] P3 C32 R5 - L1[I] M2 C3 M4X - L0[W] Q1 
+[  7] Utilization = 0.19 | pJ/Compute =   16.349 | L4[WIO] Q9 R5 M2 - L3[WI] M4 S5 P3X C2X - L2[O] M8 C3 - L1[I] P3 C8 M4X C2X - L0[W] Q3 P3 
+[  8] Utilization = 0.19 | pJ/Compute =   32.245 | L4[WIO] M4 - L3[WI] Q27 S5 M2 P9 M4X - L2[O] P3 C32 R5 - L1[I] M2 M4X C3X - L0[W] Q1 
+[  5] Utilization = 0.09 | pJ/Compute =   13.838 | L4[WIO] Q9 M2 R5 - L3[WI] M4 S5 P3X C2X - L2[O] C3 M8 - L1[I] P3 C16 M4X - L0[W] Q3 P3 
+[ 25] Utilization = 0.09 | pJ/Compute =   20.713 | L4[WIO] Q9 R5 M2 - L3[WI] S5 M4 P3X C2X - L2[O] M8 C4 - L1[I] C12 P3 M4X - L0[W] Q3 P3 
+[  3] Utilization = 0.12 | pJ/Compute =   33.550 | L4[WIO] M4 - L3[WI] M2 P9 S5 Q27 M4X - L2[O] C3 P3 R5 - L1[I] C16 M2 M4X C2X - L0[W] Q1 
+[ 27] Utilization = 0.19 | pJ/Compute =   10.457 | L4[WIO] Q9 R5 M2 - L3[WI] S5 M4 P3X C2X - L2[O] C24 M8 - L1[I] P3 M4X C2X - L0[W] Q3 P3 
+[ 22] Utilization = 0.28 | pJ/Compute =   14.374 | L4[WIO] Q9 R5 M2 - L3[WI] M4 S5 P3X C2X - L2[O] M8 C4 - L1[I] C4 P3 M4X C3X - L0[W] Q3 P3 
+[ 24] Utilization = 0.19 | pJ/Compute =   15.679 | L4[WIO] R5 Q9 M2 - L3[WI] M4 S5 P3X C2X - L2[O] M8 C4 - L1[I] C6 P3 M4X C2X - L0[W] Q3 P3 
+[ 20] Utilization = 0.38 | pJ/Compute =   13.640 | L4[WIO] Q9 M2 R5 - L3[WI] M4 S5 P3X C2X - L2[O] M8 C4 - L1[I] C3 P3 M4X C4X - L0[W] Q3 P3 
+[  4] Utilization = 0.38 | pJ/Compute =    7.380 | L4[WIO] Q9 R5 M2 - L3[WI] M4 S5 P3X C2X - L2[O] C3 M8 - L1[I] C4 P3 M4X C4X - L0[W] Q3 P3 
+[ 25] Utilization = 0.09 | pJ/Compute =   13.920 | L4[WIO] Q9 R5 M2 - L3[WI] M4 S5 P3X C2X - L2[O] C4 M8 - L1[I] P3 C12 M4X - L0[W] Q3 P3 
+[  6] Utilization = 0.25 | pJ/Compute =   31.593 | L4[WIO] M4 - L3[WI] Q27 P9 S5 M2 M4X - L2[O] R5 P3 C3 - L1[I] C8 M2 M4X C4X - L0[W] Q1 
+[  4] Utilization = 0.38 | pJ/Compute =    6.461 | L4[WIO] R5 M2 Q9 - L3[WI] M4 S5 P3X C2X - L2[O] C3 M8 - L1[I] C4 P3 M4X C4X - L0[W] Q3 P3 
+[ 22] Utilization = 0.28 | pJ/Compute =    7.784 | L4[WIO] R5 M2 Q9 - L3[WI] M4 S5 P3X C2X - L2[O] C4 M8 - L1[I] P3 C4 M4X C3X - L0[W] Q3 P3 
+[ 20] Utilization = 0.38 | pJ/Compute =    7.132 | L4[WIO] M2 R5 Q9 - L3[WI] M4 S5 P3X C2X - L2[O] C4 M8 - L1[I] P3 C3 M4X C4X - L0[W] Q3 P3 
+^C[Interrupt caught. Mapper threads will terminate after completing any ongoing evaluations.
+ 20] Utilization = 0.62 | pJ/Compute =   15.147 | L4[WIO] C6 M2 - L3[WI] Q27 M8 P3 C2 R5 S5X C2X - L2[O] C2 - L1[I] C2 P9 M16X - L0[W] Q1 
+[ 20] STATEMENT: global termination flag activated, terminating search.
+[  3] STATEMENT: global termination flag activated, terminating search.
+[ 12] STATEMENT: global termination flag activated, terminating search.
+[  7] STATEMENT: global termination flag activated, terminating search.
+[ 14] STATEMENT: global termination flag activated, terminating search.
+[ 25] STATEMENT: global termination flag activated, terminating search.
+[ 11] STATEMENT: global termination flag activated, terminating search.
+[ 23] STATEMENT: global termination flag activated, terminating search.
+[  5] STATEMENT: global termination flag activated, terminating search.
+[ 13] STATEMENT: global termination flag activated, terminating search.
+[ 26] STATEMENT: global termination flag activated, terminating search.
+[  4] STATEMENT: global termination flag activated, terminating search.
+[  6] STATEMENT: global termination flag activated, terminating search.
+[ 19] STATEMENT: global termination flag activated, terminating search.
+[ 10] STATEMENT: global termination flag activated, terminating search.
+[ 18] STATEMENT: global termination flag activated, terminating search.
+[  2] STATEMENT: global termination flag activated, terminating search.
+[  9] STATEMENT: global termination flag activated, terminating search.
+[ 17] STATEMENT: global termination flag activated, terminating search.
+[ 15] STATEMENT: global termination flag activated, terminating search.
+[ 27] STATEMENT: global termination flag activated, terminating search.
+[  8] STATEMENT: global termination flag activated, terminating search.
+[ 16] STATEMENT: global termination flag activated, terminating search.
+[ 21] STATEMENT: global termination flag activated, terminating search.
+[  0] STATEMENT: global termination flag activated, terminating search.
+[ 22] STATEMENT: global termination flag activated, terminating search.
+[ 24] STATEMENT: global termination flag activated, terminating search.
+[  1] STATEMENT: global termination flag activated, terminating search.
+
+
+Summary stats for best mapping found by mapper:
+  Utilization = 0.62 | pJ/Compute =   15.147
+Running python post-processing script...
+CSV file saved to: Results/summary_stats.csv
+Done.
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/7b4eroot@d9309ac6b740:/workspace/Project_2026/7b4e# ./script.sh [7@chmod +x script.sh [11Pd 7b4e/hmod +x script.sh [11Pd 7b4e/[3P..[9@10b6e/cd ....[K7b4e/hmod +x script.sh 
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/7b4eroot@d9309ac6b740:/workspace/Project_2026/7b4e# chmod +x script.sh [7P./script.sh 
+[?2004linput file: ../../arch/gemini_like.yaml
+input file: ../../problemCNN/AlexNet_layer2.yaml
+input file: ../../mapper/mapper.yaml
+input file: ../../constraints/constrains.yaml
+  _______                __                
+ /_  __(_)___ ___  ___  / /___  ____  ____ 
+  / / / / __ `__ \/ _ \/ / __ \/ __ \/ __ \
+ / / / / / / / / /  __/ / /_/ / /_/ / /_/ /
+/_/ /_/_/ /_/ /_/\___/_/\____/\____/ .___/ 
+                                  /_/      
+
+Problem configuration complete.
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+execute:/usr/local/bin/accelergy ../../arch/gemini_like.yaml ../../problemCNN/AlexNet_layer2.yaml ../../mapper/mapper.yaml ../../constraints/constrains.yaml --oprefix timeloop-mapper. -o ./ > timeloop-mapper.accelergy.log 2>&1
+Generate Accelergy ERT (energy reference table) to replace internal energy model.
+Generate Accelergy ART (area reference table) to replace internal area model.
+Architecture configuration complete.
+Sparse optimization configuration complete.
+Using threads = 28
+Mapper configuration complete.
+Initializing Index Factorization subspace.
+  Factorization options along problem dimension C = 3234
+  Factorization options along problem dimension M = 3003
+  Factorization options along problem dimension R = 7
+  Factorization options along problem dimension S = 7
+  Factorization options along problem dimension N = 1
+  Factorization options along problem dimension P = 84
+  Factorization options along problem dimension Q = 84
+Mapspace Dimension [IndexFactorization] Size: 3357762696288
+Mapspace Dimension [LoopPermutation] Size: 645241282560000
+Mapspace Dimension [Spatial] Size: 64
+Mapspace Dimension [DatatypeBypass] Size: 1
+Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 119920096296 Residue: 0
+Mapspace construction complete.
+Search configuration complete.
+[ 25] Utilization = 0.09 | pJ/Compute =   20.713 | L4[WIO] Q9 R5 M2 - L3[WI] S5 M4 P3X C2X - L2[O] M8 C4 - L1[I] C12 P3 M4X - L0[W] Q3 P3 
+[  9] Utilization = 0.06 | pJ/Compute =   37.247 | L4[WIO] M4 - L3[WI] Q27 P9 M2 S5 M4X - L2[O] P3 C32 R5 - L1[I] M2 C3 M4X - L0[W] Q1 
+[  5] Utilization = 0.09 | pJ/Compute =   13.838 | L4[WIO] Q9 M2 R5 - L3[WI] M4 S5 P3X C2X - L2[O] C3 M8 - L1[I] P3 C16 M4X - L0[W] Q3 P3 
+[ 27] Utilization = 0.19 | pJ/Compute =   10.457 | L4[WIO] Q9 R5 M2 - L3[WI] S5 M4 P3X C2X - L2[O] C24 M8 - L1[I] P3 M4X C2X - L0[W] Q3 P3 
+[  3] Utilization = 0.12 | pJ/Compute =   33.550 | L4[WIO] M4 - L3[WI] M2 P9 S5 Q27 M4X - L2[O] C3 P3 R5 - L1[I] C16 M2 M4X C2X - L0[W] Q1 
+[  8] Utilization = 0.19 | pJ/Compute =   32.245 | L4[WIO] M4 - L3[WI] Q27 S5 M2 P9 M4X - L2[O] P3 C32 R5 - L1[I] M2 M4X C3X - L0[W] Q1 
+[  7] Utilization = 0.19 | pJ/Compute =   16.349 | L4[WIO] Q9 R5 M2 - L3[WI] M4 S5 P3X C2X - L2[O] M8 C3 - L1[I] P3 C8 M4X C2X - L0[W] Q3 P3 
+[  4] Utilization = 0.38 | pJ/Compute =    7.380 | L4[WIO] Q9 R5 M2 - L3[WI] M4 S5 P3X C2X - L2[O] C3 M8 - L1[I] C4 P3 M4X C4X - L0[W] Q3 P3 
+[ 20] Utilization = 0.38 | pJ/Compute =   13.640 | L4[WIO] Q9 M2 R5 - L3[WI] M4 S5 P3X C2X - L2[O] M8 C4 - L1[I] C3 P3 M4X C4X - L0[W] Q3 P3 
+[ 25] Utilization = 0.09 | pJ/Compute =   13.920 | L4[WIO] Q9 R5 M2 - L3[WI] M4 S5 P3X C2X - L2[O] C4 M8 - L1[I] P3 C12 M4X - L0[W] Q3 P3 
+[ 24] Utilization = 0.19 | pJ/Compute =   15.679 | L4[WIO] R5 Q9 M2 - L3[WI] M4 S5 P3X C2X - L2[O] M8 C4 - L1[I] C6 P3 M4X C2X - L0[W] Q3 P3 
+[ 22] Utilization = 0.28 | pJ/Compute =   14.374 | L4[WIO] Q9 R5 M2 - L3[WI] M4 S5 P3X C2X - L2[O] M8 C4 - L1[I] C4 P3 M4X C3X - L0[W] Q3 P3 
+[  6] Utilization = 0.25 | pJ/Compute =   31.593 | L4[WIO] M4 - L3[WI] Q27 P9 S5 M2 M4X - L2[O] R5 P3 C3 - L1[I] C8 M2 M4X C4X - L0[W] Q1 
+[ 20] Utilization = 0.38 | pJ/Compute =    7.132 | L4[WIO] M2 R5 Q9 - L3[WI] M4 S5 P3X C2X - L2[O] C4 M8 - L1[I] P3 C3 M4X C4X - L0[W] Q3 P3 
+[  4] Utilization = 0.38 | pJ/Compute =    6.461 | L4[WIO] R5 M2 Q9 - L3[WI] M4 S5 P3X C2X - L2[O] C3 M8 - L1[I] C4 P3 M4X C4X - L0[W] Q3 P3 
+[  3] Utilization = 0.47 | pJ/Compute =   15.038 | L4[WIO] P9 S5 - L3[WI] M16 R5X M2X - L2[O] C24 Q3 - L1[I] M2 C4 Q3X M4X - L0[W] Q3 P3 
+[  3] Utilization = 0.47 | pJ/Compute =   14.162 | L4[WIO] S5 P9 - L3[WI] M16 R5X M2X - L2[O] C24 Q3 - L1[I] M2 C4 Q3X M4X - L0[W] Q3 P3 
+[ 17] Utilization = 0.62 | pJ/Compute =   13.876 | L4[WIO] M2 C6 - L3[WI] P3 Q27 M8 C2 R5 S5X C2X - L2[O] Q1 - L1[I] C4 P9 M16X - L0[W] Q1 
+[ 17] Utilization = 0.62 | pJ/Compute =   13.858 | L4[WIO] C6 M2 - L3[WI] P3 Q27 M8 C2 R5 S5X C2X - L2[O] Q1 - L1[I] C4 P9 M16X - L0[W] Q1 
+[ 18] Utilization = 1.00 | pJ/Compute =   15.991 | L4[WIO] S5 Q3 M2 C2 - L3[WI] C2 P9 M2 M16X - L2[O] Q3 P3 M2 - L1[I] C3 R5 M2X C8X - L0[W] Q3 
+[ 18] Utilization = 1.00 | pJ/Compute =   15.762 | L4[WIO] C2 S5 M2 Q3 - L3[WI] M2 C2 P9 M16X - L2[O] Q3 P3 M2 - L1[I] C3 R5 M2X C8X - L0[W] Q3 
+[ 18] Utilization = 1.00 | pJ/Compute =   15.239 | L4[WIO] C2 Q3 M2 S5 - L3[WI] P9 M2 C2 M16X - L2[O] Q3 M2 P3 - L1[I] C3 R5 M2X C8X - L0[W] Q3 
+[ 24] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 19] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  8] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 12] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 25] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 15] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 14] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 17] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  6] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 16] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  5] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 22] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 11] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 27] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 20] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 10] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 23] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  7] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 21] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  2] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  3] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  0] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 13] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 26] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  9] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 18] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  4] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  1] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+
+
+Summary stats for best mapping found by mapper:
+  Utilization = 1.00 | pJ/Compute =   15.239
+Running python post-processing script...
+CSV file saved to: Results/summary_stats.csv
+Done.
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/7b4eroot@d9309ac6b740:/workspace/Project_2026/7b4e# cd ..
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026root@d9309ac6b740:/workspace/Project_2026# cd 9b4e/
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/9b4eroot@d9309ac6b740:/workspace/Project_2026/9b4e# cd 9b4e/[3P.../script.sh [7@chmod +x script.sh 
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/9b4eroot@d9309ac6b740:/workspace/Project_2026/9b4e# chmod +x script.sh [11Pd 9b4e/[3P.../script.sh 
+[?2004linput file: ../../arch/gemini_like.yaml
+input file: ../../problemCNN/AlexNet_layer1.yaml
+input file: ../../mapper/mapper.yaml
+input file: ../../constraints/constrains.yaml
+  _______                __                
+ /_  __(_)___ ___  ___  / /___  ____  ____ 
+  / / / / __ `__ \/ _ \/ / __ \/ __ \/ __ \
+ / / / / / / / / /  __/ / /_/ / /_/ / /_/ /
+/_/ /_/_/ /_/ /_/\___/_/\____/\____/ .___/ 
+                                  /_/      
+
+Problem configuration complete.
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+execute:/usr/local/bin/accelergy ../../arch/gemini_like.yaml ../../problemCNN/AlexNet_layer1.yaml ../../mapper/mapper.yaml ../../constraints/constrains.yaml --oprefix timeloop-mapper. -o ./ > timeloop-mapper.accelergy.log 2>&1
+Generate Accelergy ERT (energy reference table) to replace internal energy model.
+Generate Accelergy ART (area reference table) to replace internal area model.
+Architecture configuration complete.
+Sparse optimization configuration complete.
+Using threads = 28
+Mapper configuration complete.
+Initializing Index Factorization subspace.
+  Factorization options along problem dimension C = 7
+  Factorization options along problem dimension M = 3234
+  Factorization options along problem dimension R = 7
+  Factorization options along problem dimension S = 7
+  Factorization options along problem dimension N = 1
+  Factorization options along problem dimension P = 49
+  Factorization options along problem dimension Q = 49
+Mapspace Dimension [IndexFactorization] Size: 2663338062
+Mapspace Dimension [LoopPermutation] Size: 645241282560000
+Mapspace Dimension [Spatial] Size: 64
+Mapspace Dimension [DatatypeBypass] Size: 1
+Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 95119217 Residue: 14
+Mapspace construction complete.
+Search configuration complete.
+[  3] Utilization = 0.03 | pJ/Compute =   46.266 | L4[WIO] P11 Q5 M3 - L3[WI] P5 S11 M8X - L2[O] M4 C3 - L1[I] R11 - L0[W] Q11 
+[  6] Utilization = 0.03 | pJ/Compute =   34.814 | L4[WIO] M3 P11 C3 Q5 - L3[WI] S11 P5 M8X - L2[O] M4 - L1[I] R11 - L0[W] Q11 
+[  5] Utilization = 0.03 | pJ/Compute =   34.538 | L4[WIO] M3 P11 Q5 - L3[WI] C3 S11 P5 M8X - L2[O] M4 - L1[I] R11 - L0[W] Q11 
+[  5] Utilization = 0.03 | pJ/Compute =   24.299 | L4[WIO] P11 Q5 M3 - L3[WI] P5 S11 C3 M8X - L2[O] M4 - L1[I] R11 - L0[W] Q11 
+[  2] Utilization = 0.09 | pJ/Compute =   16.988 | L4[WIO] Q5 M2 S11 - L3[WI] Q11 P5 M3X - L2[O] M2 - L1[I] R11 C3 M8X - L0[W] P11 
+[  3] Utilization = 0.03 | pJ/Compute =   26.957 | L4[WIO] P11 M3 Q5 - L3[WI] S11 P5 M8X - L2[O] C3 M4 - L1[I] R11 - L0[W] Q11 
+[  6] Utilization = 0.03 | pJ/Compute =   24.100 | L4[WIO] C3 P11 M3 Q5 - L3[WI] P5 S11 M8X - L2[O] M4 - L1[I] R11 - L0[W] Q11 
+[ 20] Utilization = 0.47 | pJ/Compute =    8.149 | L4[WIO] M4 C3 - L3[WI] M3 Q5 P11X - L2[O] P5 - L1[I] S11 M8 R11X - L0[W] Q11 
+[  4] Utilization = 0.28 | pJ/Compute =   18.206 | L4[WIO] Q5 S11 M2 - L3[WI] Q11 P5 M3X C3X - L2[O] M2 - L1[I] R11 M8X - L0[W] P11 
+[  5] Utilization = 0.03 | pJ/Compute =   23.042 | L4[WIO] M3 Q5 P11 - L3[WI] P5 S11 C3 M8X - L2[O] M4 - L1[I] R11 - L0[W] Q11 
+[  9] Utilization = 0.04 | pJ/Compute =   39.469 | L4[WIO] Q11 P5 M2 - L3[WI] R11 M8 - L2[O] S11 Q5 - L1[I] C3 M6 P11X - L0[W] Q1 
+[ 19] Utilization = 0.47 | pJ/Compute =    7.782 | L4[WIO] M4 - L3[WI] C3 Q5 M3 P11X - L2[O] P5 - L1[I] S11 M8 R11X - L0[W] Q11 
+[ 27] Utilization = 0.05 | pJ/Compute =   27.376 | L4[WIO] Q5 S11 M2 C3 - L3[WI] P5 Q11 M3X - L2[O] M2 - L1[I] M2 R11 M4X - L0[W] P11 
+[ 25] Utilization = 0.14 | pJ/Compute =   17.639 | L4[WIO] Q5 M2 S11 - L3[WI] P5 Q11 M3X C3X - L2[O] M2 - L1[I] R11 M2 M4X - L0[W] P11 
+[ 17] Utilization = 0.47 | pJ/Compute =    7.067 | L4[WIO] M4 - L3[WI] M3 Q5 P11X - L2[O] C3 P5 - L1[I] S11 M8 R11X - L0[W] Q11 
+[ 26] Utilization = 0.05 | pJ/Compute =   26.160 | L4[WIO] S11 Q5 M2 - L3[WI] C3 P5 Q11 M3X - L2[O] M2 - L1[I] R11 M2 M4X - L0[W] P11 
+[  6] Utilization = 0.03 | pJ/Compute =   23.824 | L4[WIO] C3 M3 P11 Q5 - L3[WI] P5 S11 M8X - L2[O] M4 - L1[I] R11 - L0[W] Q11 
+[ 18] Utilization = 0.19 | pJ/Compute =   46.315 | L4[WIO] P11 M12 S11 R11 - L3[WI] Q1 Q5X C3X - L2[O] Q11 - L1[I] M4 P5X M2X - L0[W] Q1 
+[ 16] Utilization = 0.15 | pJ/Compute =   49.876 | L4[WIO] P11 S11 M12 R11 - L3[WI] Q1 Q5X - L2[O] Q11 - L1[I] M4 C3 P5X M2X - L0[W] Q1 
+[ 23] Utilization = 0.05 | pJ/Compute =   17.362 | L4[WIO] M2 Q5 S11 - L3[WI] P5 Q11 M3X - L2[O] M2 - L1[I] M2 R11 C3 M4X - L0[W] P11 
+[ 11] Utilization = 0.13 | pJ/Compute =   35.908 | L4[WIO] P5 Q11 M2 - L3[WI] M8 R11 C3X - L2[O] Q5 S11 - L1[I] M6 P11X - L0[W] Q1 
+[ 24] Utilization = 0.05 | pJ/Compute =   17.362 | L4[WIO] Q5 M2 S11 - L3[WI] P5 Q11 M3X - L2[O] C3 M2 - L1[I] R11 M2 M4X - L0[W] P11 
+[ 13] Utilization = 0.04 | pJ/Compute =   36.792 | L4[WIO] Q11 P5 M2 C3 - L3[WI] M8 R11 - L2[O] S11 Q5 - L1[I] M6 P11X - L0[W] Q1 
+[ 19] Utilization = 0.47 | pJ/Compute =    7.067 | L4[WIO] M4 - L3[WI] Q5 M3 C3 P11X - L2[O] P5 - L1[I] S11 M8 R11X - L0[W] Q11 
+[  3] Utilization = 0.03 | pJ/Compute =   26.613 | L4[WIO] M3 Q5 P11 - L3[WI] S11 P5 M8X - L2[O] C3 M4 - L1[I] R11 - L0[W] Q11 
+[ 22] Utilization = 0.14 | pJ/Compute =   12.144 | L4[WIO] M2 Q5 S11 - L3[WI] P5 Q11 M3X - L2[O] M2 - L1[I] R11 M2 M4X C3X - L0[W] P11 
+[ 20] Utilization = 0.47 | pJ/Compute =    7.782 | L4[WIO] C3 M4 - L3[WI] M3 Q5 P11X - L2[O] P5 - L1[I] S11 M8 R11X - L0[W] Q11 
+[  6] Utilization = 0.03 | pJ/Compute =   23.756 | L4[WIO] M3 C3 Q5 P11 - L3[WI] P5 S11 M8X - L2[O] M4 - L1[I] R11 - L0[W] Q11 
+[ 12] Utilization = 0.04 | pJ/Compute =   35.327 | L4[WIO] P5 M2 Q11 - L3[WI] C3 M8 R11 - L2[O] S11 Q5 - L1[I] M6 P11X - L0[W] Q1 
+[ 10] Utilization = 0.04 | pJ/Compute =   38.184 | L4[WIO] P5 M2 Q11 - L3[WI] R11 M8 - L2[O] Q5 C3 S11 - L1[I] M6 P11X - L0[W] Q1 
+[ 13] Utilization = 0.04 | pJ/Compute =   35.538 | L4[WIO] Q11 M2 C3 P5 - L3[WI] M8 R11 - L2[O] Q5 S11 - L1[I] M6 P11X - L0[W] Q1 
+[ 12] Utilization = 0.04 | pJ/Compute =   34.612 | L4[WIO] P5 M2 Q11 - L3[WI] M8 R11 C3 - L2[O] Q5 S11 - L1[I] M6 P11X - L0[W] Q1 
+[  9] Utilization = 0.04 | pJ/Compute =   34.823 | L4[WIO] Q11 M2 P5 - L3[WI] M8 R11 - L2[O] S11 Q5 - L1[I] M6 C3 P11X - L0[W] Q1 
+[ 10] Utilization = 0.04 | pJ/Compute =   35.897 | L4[WIO] P5 Q11 M2 - L3[WI] M8 R11 - L2[O] S11 C3 Q5 - L1[I] M6 P11X - L0[W] Q1 
+[  2] Utilization = 0.69 | pJ/Compute =   23.269 | L4[WIO] S11 - L3[WI] M2 P55 Q11X - L2[O] M3 R11 - L1[I] Q5 C3 M16X - L0[W] Q1 
+[  2] Utilization = 0.69 | pJ/Compute =   19.162 | L4[WIO] S11 - L3[WI] M2 P55 Q11X - L2[O] R11 M3 - L1[I] Q5 C3 M16X - L0[W] Q1 
+[  2] Utilization = 0.69 | pJ/Compute =   16.605 | L4[WIO] S11 - L3[WI] P55 M2 Q11X - L2[O] R11 M3 - L1[I] C3 Q5 M16X - L0[W] Q1 
+[ 25] Utilization = 0.70 | pJ/Compute =   13.051 | L4[WIO] Q5 - L3[WI] M4 Q11 S11 M4X C3X - L2[O] M2 R11 - L1[I] Q1 P5X M3X - L0[W] P11 
+[  1] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 11] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  4] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 15] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 22] Utilization = 0.70 | pJ/Compute =   12.320 | L4[WIO] P11 - L3[WI] M2 Q5 P5X M3X - L2[O] Q11 M4 - L1[I] R11 S11 M4X C3X - L0[W] Q1 
+[ 26] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  9] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 23] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 27] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 18] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  8] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 19] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 20] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 24] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 16] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 25] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  2] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 17] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  6] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 13] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  3] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 12] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  5] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 10] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 22] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  7] STATEMENT: 5000000 invalid mappings (4912963 fanout, 87037 capacity) found since the last valid mapping, terminating search.
+[ 14] STATEMENT: 5000000 invalid mappings (4914748 fanout, 85252 capacity) found since the last valid mapping, terminating search.
+[ 21] STATEMENT: 5000000 invalid mappings (4912269 fanout, 87731 capacity) found since the last valid mapping, terminating search.
+[  0] STATEMENT: 5000000 invalid mappings (4914643 fanout, 85357 capacity) found since the last valid mapping, terminating search.
+
+
+Summary stats for best mapping found by mapper:
+  Utilization = 0.70 | pJ/Compute =   12.320
+Running python post-processing script...
+CSV file saved to: Results/summary_stats.csv
+Done.
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/9b4eroot@d9309ac6b740:/workspace/Project_2026/9b4e# cd ..
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026root@d9309ac6b740:/workspace/Project_2026# cd 10b6e/
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/10b6eroot@d9309ac6b740:/workspace/Project_2026/10b6e# cd 10b6e/[4P.../script.sh [7@chmod +x script.sh 
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/10b6eroot@d9309ac6b740:/workspace/Project_2026/10b6e# chmod +x script.sh [10Pd 10b6e/[4P.../script.sh 
+[?2004linput file: ../../arch/gemini_like.yaml
+input file: ../../problemCNN/AlexNet_layer5.yaml
+input file: ../../mapper/mapper.yaml
+input file: ../../constraints/constrains.yaml
+  _______                __                
+ /_  __(_)___ ___  ___  / /___  ____  ____ 
+  / / / / __ `__ \/ _ \/ / __ \/ __ \/ __ \
+ / / / / / / / / /  __/ / /_/ / /_/ / /_/ /
+/_/ /_/_/ /_/ /_/\___/_/\____/\____/ .___/ 
+                                  /_/      
+
+Problem configuration complete.
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+execute:/usr/local/bin/accelergy ../../arch/gemini_like.yaml ../../problemCNN/AlexNet_layer5.yaml ../../mapper/mapper.yaml ../../constraints/constrains.yaml --oprefix timeloop-mapper. -o ./ > timeloop-mapper.accelergy.log 2>&1
+Generate Accelergy ERT (energy reference table) to replace internal energy model.
+Generate Accelergy ART (area reference table) to replace internal area model.
+Architecture configuration complete.
+Sparse optimization configuration complete.
+Using threads = 28
+Mapper configuration complete.
+Initializing Index Factorization subspace.
+  Factorization options along problem dimension C = 12012
+  Factorization options along problem dimension M = 3003
+  Factorization options along problem dimension R = 7
+  Factorization options along problem dimension S = 7
+  Factorization options along problem dimension N = 1
+  Factorization options along problem dimension P = 7
+  Factorization options along problem dimension Q = 7
+Mapspace Dimension [IndexFactorization] Size: 86608958436
+Mapspace Dimension [LoopPermutation] Size: 645241282560000
+Mapspace Dimension [Spatial] Size: 64
+Mapspace Dimension [DatatypeBypass] Size: 1
+Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 3093177087 Residue: 0
+Mapspace construction complete.
+Search configuration complete.
+[ 20] Utilization = 0.09 | pJ/Compute =   45.735 | L4[WIO] M8 C32 P13 - L3[WI] M2 Q13 M4X C2X - L2[O] M4 S3 - L1[I] C6 R3X - L0[W] Q1 
+[ 11] Utilization = 0.05 | pJ/Compute =   52.238 | L4[WIO] P13 M8 C32 - L3[WI] Q13 M2 M4X - L2[O] S3 M4 C12 - L1[I] Q1 R3X - L0[W] Q1 
+[ 10] Utilization = 0.05 | pJ/Compute =   52.238 | L4[WIO] P13 M8 C32 - L3[WI] Q13 M2 M4X - L2[O] S3 M4 C6 - L1[I] C2 R3X - L0[W] Q1 
+[ 25] Utilization = 0.19 | pJ/Compute =   41.941 | L4[WIO] P13 C32 M8 - L3[WI] M2 Q13 M4X C2X - L2[O] S3 C3 M4 - L1[I] Q1 R3X C2X - L0[W] Q1 
+[  4] Utilization = 0.05 | pJ/Compute =   52.238 | L4[WIO] P13 M8 C32 - L3[WI] Q13 M2 M4X - L2[O] S3 M4 C3 - L1[I] C4 R3X - L0[W] Q1 
+[ 19] Utilization = 0.19 | pJ/Compute =   44.431 | L4[WIO] M8 C32 P13 - L3[WI] M2 Q13 M4X C2X - L2[O] M4 S3 - L1[I] C3 R3X C2X - L0[W] Q1 
+[  9] Utilization = 0.09 | pJ/Compute =   50.933 | L4[WIO] P13 M8 C32 - L3[WI] Q13 M2 M4X - L2[O] S3 M4 C6 - L1[I] Q1 R3X C2X - L0[W] Q1 
+[ 26] Utilization = 0.09 | pJ/Compute =   43.245 | L4[WIO] P13 C32 M8 - L3[WI] M2 Q13 M4X C2X - L2[O] S3 C3 M4 - L1[I] C2 R3X - L0[W] Q1 
+[ 27] Utilization = 0.09 | pJ/Compute =   43.245 | L4[WIO] P13 C32 M8 - L3[WI] M2 Q13 M4X C2X - L2[O] S3 C6 M4 - L1[I] Q1 R3X - L0[W] Q1 
+[ 20] Utilization = 0.09 | pJ/Compute =   37.159 | L4[WIO] M8 C32 P13 - L3[WI] Q13 M2 M4X C2X - L2[O] S3 M4 - L1[I] C6 R3X - L0[W] Q1 
+[  6] Utilization = 0.14 | pJ/Compute =   50.498 | L4[WIO] P13 M8 C32 - L3[WI] Q13 M2 M4X - L2[O] S3 M4 C4 - L1[I] Q1 R3X C3X - L0[W] Q1 
+[ 22] Utilization = 0.28 | pJ/Compute =   49.664 | L4[WIO] C32 P13 M8 - L3[WI] M2 Q13 M4X C2X - L2[O] M4 S3 C2 - L1[I] Q1 R3X C3X - L0[W] Q1 
+[ 17] Utilization = 0.28 | pJ/Compute =   41.966 | L4[WIO] P13 M8 C32 - L3[WI] Q13 M2 M4X C2X - L2[O] S3 M4 - L1[I] C2 R3X C3X - L0[W] Q1 
+[  4] Utilization = 0.05 | pJ/Compute =   45.691 | L4[WIO] M8 C32 P13 - L3[WI] Q13 M2 M4X - L2[O] M4 C3 S3 - L1[I] C4 R3X - L0[W] Q1 
+[  7] Utilization = 0.05 | pJ/Compute =   52.238 | L4[WIO] P13 M8 C32 - L3[WI] Q13 M2 M4X - L2[O] S3 M4 C4 - L1[I] C3 R3X - L0[W] Q1 
+[  1] Utilization = 0.19 | pJ/Compute =   49.403 | L4[WIO] C32 P13 M8 - L3[WI] M2 Q13 M4X - L2[O] M4 S3 C3 - L1[I] Q1 R3X C4X - L0[W] Q1 
+[ 19] Utilization = 0.19 | pJ/Compute =   35.854 | L4[WIO] M8 C32 P13 - L3[WI] Q13 M2 M4X C2X - L2[O] S3 M4 - L1[I] C3 R3X C2X - L0[W] Q1 
+[ 23] Utilization = 0.09 | pJ/Compute =   51.403 | L4[WIO] C32 P13 M8 - L3[WI] M2 Q13 M4X C2X - L2[O] M4 S3 C2 - L1[I] C3 R3X - L0[W] Q1 
+[  3] Utilization = 0.09 | pJ/Compute =   50.055 | L4[WIO] C32 P13 M8 - L3[WI] M2 Q13 M4X - L2[O] M4 S3 C3 - L1[I] C2 R3X C2X - L0[W] Q1 
+[ 11] Utilization = 0.05 | pJ/Compute =   45.691 | L4[WIO] M8 C32 P13 - L3[WI] Q13 M2 M4X - L2[O] M4 C12 S3 - L1[I] Q1 R3X - L0[W] Q1 
+[  9] Utilization = 0.09 | pJ/Compute =   44.387 | L4[WIO] M8 C32 P13 - L3[WI] Q13 M2 M4X - L2[O] M4 C6 S3 - L1[I] Q1 R3X C2X - L0[W] Q1 
+[ 22] Utilization = 0.28 | pJ/Compute =   43.996 | L4[WIO] C32 M8 P13 - L3[WI] Q13 M2 M4X C2X - L2[O] M4 C2 S3 - L1[I] Q1 R3X C3X - L0[W] Q1 
+[ 23] Utilization = 0.09 | pJ/Compute =   45.735 | L4[WIO] C32 M8 P13 - L3[WI] Q13 M2 M4X C2X - L2[O] M4 C2 S3 - L1[I] C3 R3X - L0[W] Q1 
+[ 12] Utilization = 0.50 | pJ/Compute =   37.374 | L4[WIO] P13 M4 C2 - L3[WI] Q13 M2X C4X - L2[O] C12 M2 - L1[I] R3 M4 S3 M4X C4X - L0[W] Q1 
+[ 24] Utilization = 0.56 | pJ/Compute =    7.208 | L4[WIO] M2 C4 - L3[WI] C4 M8 M4X C3X - L2[O] R3 C4 M2 - L1[I] P13 S3X M2X C2X - L0[W] Q13 
+[ 17] Utilization = 0.28 | pJ/Compute =   35.419 | L4[WIO] M8 C32 P13 - L3[WI] Q13 M2 M4X C2X - L2[O] S3 M4 - L1[I] C2 R3X C3X - L0[W] Q1 
+[ 22] Utilization = 0.28 | pJ/Compute =   35.838 | L4[WIO] C32 M8 P13 - L3[WI] Q13 M2 M4X C2X - L2[O] C2 S3 M4 - L1[I] Q1 R3X C3X - L0[W] Q1 
+[  5] Utilization = 0.38 | pJ/Compute =   38.555 | L4[WIO] P13 M4 C2 - L3[WI] Q13 M2X C4X - L2[O] M2 C8 - L1[I] S3 R3 C2 M4 M4X C3X - L0[W] Q1 
+[ 24] Utilization = 0.56 | pJ/Compute =    7.160 | L4[WIO] C4 M2 - L3[WI] C4 M8 M4X C3X - L2[O] R3 C4 M2 - L1[I] P13 S3X M2X C2X - L0[W] Q13 
+[ 24] Utilization = 0.56 | pJ/Compute =    6.725 | L4[WIO] M2 C4 - L3[WI] M8 C4 M4X C3X - L2[O] R3 C4 M2 - L1[I] P13 S3X M2X C2X - L0[W] Q13 
+[ 24] Utilization = 0.56 | pJ/Compute =    6.435 | L4[WIO] C4 M2 - L3[WI] M8 C4 M4X C3X - L2[O] C4 M2 R3 - L1[I] P13 S3X M2X C2X - L0[W] Q13 
+[  1] Utilization = 1.00 | pJ/Compute =   38.166 | L4[WIO] M4 R3 P13 - L3[WI] S3 C3 Q13 M2 C16X - L2[O] M2 - L1[I] C8 M16X - L0[W] Q1 
+[  1] Utilization = 1.00 | pJ/Compute =   38.026 | L4[WIO] R3 M4 P13 - L3[WI] C3 Q13 S3 M2 C16X - L2[O] M2 - L1[I] C8 M16X - L0[W] Q1 
+[  1] Utilization = 1.00 | pJ/Compute =   37.287 | L4[WIO] M4 R3 P13 - L3[WI] C3 M2 Q13 S3 C16X - L2[O] M2 - L1[I] C8 M16X - L0[W] Q1 
+[  7] Utilization = 1.00 | pJ/Compute =   37.214 | L4[WIO] M4 R3 P13 - L3[WI] M2 Q13 C3 S3 C16X - L2[O] C2 M2 - L1[I] C4 M16X - L0[W] Q1 
+[ 26] Utilization = 1.00 | pJ/Compute =   33.677 | L4[WIO] S3 C4 Q13 - L3[WI] M4 P13 M4X C4X - L2[O] M4 C6 - L1[I] R3 M4X C4X - L0[W] Q1 
+[ 26] Utilization = 1.00 | pJ/Compute =   31.637 | L4[WIO] C4 S3 Q13 - L3[WI] M4 P13 M4X C4X - L2[O] C6 M4 - L1[I] R3 M4X C4X - L0[W] Q1 
+[ 10] Utilization = 1.00 | pJ/Compute =    9.521 | L4[WIO] C12 - L3[WI] M16 M4X C4X - L2[O] S3 M2 P13 - L1[I] R3 M2X C8X - L0[W] Q13 
+[ 20] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  6] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 22] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 26] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 19] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  9] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  4] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 21] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  2] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 25] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 12] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 23] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 17] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 18] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 27] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  8] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  3] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 24] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 11] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  0] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 14] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  1] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  5] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 16] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 15] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  7] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 13] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 10] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+
+
+Summary stats for best mapping found by mapper:
+  Utilization = 1.00 | pJ/Compute =    9.521
+Running python post-processing script...
+CSV file saved to: Results/summary_stats.csv
+Done.
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/10b6eroot@d9309ac6b740:/workspace/Project_2026/10b6e# cd ..
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026root@d9309ac6b740:/workspace/Project_2026# cd 15b4e/
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/15b4eroot@d9309ac6b740:/workspace/Project_2026/15b4e# cd 15b4e/[4P.../script.sh [7@chmod +x script.sh 
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/15b4eroot@d9309ac6b740:/workspace/Project_2026/15b4e# chmod +x script.sh [10Pd 15b4e/[4P.../script.sh 
+[?2004linput file: ../../arch/gemini_like.yaml
+input file: ../../problemCNN/AlexNet_layer8_FC.yaml
+input file: ../../mapper/mapper.yaml
+input file: ../../constraints/constrains.yaml
+  _______                __                
+ /_  __(_)___ ___  ___  / /___  ____  ____ 
+  / / / / __ `__ \/ _ \/ / __ \/ __ \/ __ \
+ / / / / / / / / /  __/ / /_/ / /_/ / /_/ /
+/_/ /_/_/ /_/ /_/\___/_/\____/\____/ .___/ 
+                                  /_/      
+
+Problem configuration complete.
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+execute:/usr/local/bin/accelergy ../../arch/gemini_like.yaml ../../problemCNN/AlexNet_layer8_FC.yaml ../../mapper/mapper.yaml ../../constraints/constrains.yaml --oprefix timeloop-mapper. -o ./ > timeloop-mapper.accelergy.log 2>&1
+Generate Accelergy ERT (energy reference table) to replace internal energy model.
+Generate Accelergy ART (area reference table) to replace internal area model.
+Architecture configuration complete.
+Sparse optimization configuration complete.
+Using threads = 28
+Mapper configuration complete.
+Initializing Index Factorization subspace.
+  Factorization options along problem dimension C = 18564
+  Factorization options along problem dimension M = 7056
+  Factorization options along problem dimension R = 1
+  Factorization options along problem dimension S = 1
+  Factorization options along problem dimension N = 1
+  Factorization options along problem dimension P = 1
+  Factorization options along problem dimension Q = 1
+Mapspace Dimension [IndexFactorization] Size: 130987584
+Mapspace Dimension [LoopPermutation] Size: 645241282560000
+Mapspace Dimension [Spatial] Size: 64
+Mapspace Dimension [DatatypeBypass] Size: 1
+Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 4678128 Residue: 0
+Mapspace construction complete.
+Search configuration complete.
+[ 11] Utilization = 0.00 | pJ/Compute =  143.537 | L4[WIO] C512 M20 - L3[WI] M10 - L2[O] C4 M5 - L1[I] C2 - L0[W] Q1 
+[  5] Utilization = 0.02 | pJ/Compute =  160.862 | L4[WIO] C512 M20 - L3[WI] M10 - L2[O] M5 C2 - L1[I] Q1 C4X - L0[W] Q1 
+[  0] Utilization = 0.05 | pJ/Compute =  118.161 | L4[WIO] M100 - L3[WI] Q1 C2X - L2[O] C8 - L1[I] M2 C128 M5X C2X - L0[W] Q1 
+[ 10] Utilization = 0.01 | pJ/Compute =  162.819 | L4[WIO] C512 M20 - L3[WI] M10 - L2[O] M5 C4 - L1[I] Q1 C2X - L0[W] Q1 
+[ 24] Utilization = 0.03 | pJ/Compute =  135.666 | L4[WIO] C512 M20 - L3[WI] M10 C4X - L2[O] M5 - L1[I] Q1 C2X - L0[W] Q1 
+[ 18] Utilization = 0.01 | pJ/Compute =  138.371 | L4[WIO] C512 M20 - L3[WI] M10 C2X - L2[O] M5 - L1[I] C4 - L0[W] Q1 
+[  4] Utilization = 0.05 | pJ/Compute =  119.926 | L4[WIO] C4 M25 - L3[WI] M2 M4X C2X - L2[O] C256 M5 - L1[I] Q1 C2X - L0[W] Q1 
+[  2] Utilization = 0.00 | pJ/Compute =  137.767 | L4[WIO] C512 M20 - L3[WI] M10 - L2[O] M5 - L1[I] C8 - L0[W] Q1 
+[  6] Utilization = 0.05 | pJ/Compute =  117.888 | L4[WIO] C2 M25 - L3[WI] M5 C4 C4X - L2[O] C2 M8 - L1[I] C4 C16X - L0[W] Q1 
+[  1] Utilization = 0.01 | pJ/Compute =  135.991 | L4[WIO] M20 C512 - L3[WI] M10 - L2[O] M5 - L1[I] C4 C2X - L0[W] Q1 
+[ 11] Utilization = 0.04 | pJ/Compute =  129.294 | L4[WIO] C16 - L3[WI] M2 C32 M10X - L2[O] M50 C4 - L1[I] C2 - L0[W] Q1 
+[ 17] Utilization = 0.02 | pJ/Compute =  136.595 | L4[WIO] M20 C512 - L3[WI] M10 C2X - L2[O] M5 - L1[I] C2 C2X - L0[W] Q1 
+[  1] Utilization = 0.01 | pJ/Compute =  133.854 | L4[WIO] C512 M20 - L3[WI] M10 - L2[O] M5 - L1[I] C4 C2X - L0[W] Q1 
+[  8] Utilization = 0.00 | pJ/Compute =  166.732 | L4[WIO] C512 M20 - L3[WI] M10 - L2[O] M5 C2 - L1[I] C4 - L0[W] Q1 
+[  2] Utilization = 0.03 | pJ/Compute =  132.541 | L4[WIO] C4 M25 - L3[WI] M2 M4X C2X - L2[O] M5 C16 - L1[I] C32 - L0[W] Q1 
+[ 17] Utilization = 0.02 | pJ/Compute =  134.458 | L4[WIO] C512 M20 - L3[WI] M10 C2X - L2[O] M5 - L1[I] C2 C2X - L0[W] Q1 
+[  8] Utilization = 0.00 | pJ/Compute =  143.537 | L4[WIO] C512 M20 - L3[WI] M10 - L2[O] C2 M5 - L1[I] C4 - L0[W] Q1 
+[ 20] Utilization = 0.02 | pJ/Compute =  140.228 | L4[WIO] C512 M20 - L3[WI] M10 C2X - L2[O] C2 M5 - L1[I] Q1 C2X - L0[W] Q1 
+[ 10] Utilization = 0.01 | pJ/Compute =  141.210 | L4[WIO] M20 C512 - L3[WI] M10 - L2[O] C4 M5 - L1[I] Q1 C2X - L0[W] Q1 
+[  3] Utilization = 0.05 | pJ/Compute =  129.390 | L4[WIO] C16 M10 - L3[WI] C4 M10 M5X C2X - L2[O] M2 C16 - L1[I] Q1 C2X - L0[W] Q1 
+[ 13] Utilization = 0.05 | pJ/Compute =  119.356 | L4[WIO] C2 M25 - L3[WI] M5 C4 C4X - L2[O] C2 M8 - L1[I] C16 C4X - L0[W] Q1 
+[  5] Utilization = 0.02 | pJ/Compute =  139.253 | L4[WIO] M20 C512 - L3[WI] M10 - L2[O] C2 M5 - L1[I] Q1 C4X - L0[W] Q1 
+[  7] Utilization = 0.01 | pJ/Compute =  162.819 | L4[WIO] C512 M20 - L3[WI] M10 - L2[O] M5 C2 - L1[I] C2 C2X - L0[W] Q1 
+[ 19] Utilization = 0.05 | pJ/Compute =  130.632 | L4[WIO] M25 C4 - L3[WI] M2 M4X C2X - L2[O] M5 C32 - L1[I] C8 C2X - L0[W] Q1 
+[ 19] Utilization = 0.05 | pJ/Compute =  121.930 | L4[WIO] M25 C4 - L3[WI] M2 M4X C2X - L2[O] C32 M5 - L1[I] C8 C2X - L0[W] Q1 
+[ 24] Utilization = 0.05 | pJ/Compute =  116.619 | L4[WIO] M50 - L3[WI] C8 M5X C2X - L2[O] C4 M2 - L1[I] C16 M2X C4X - L0[W] Q1 
+[ 16] Utilization = 0.05 | pJ/Compute =  115.260 | L4[WIO] M5 C8 - L3[WI] C2 M2 M2X C4X - L2[O] M50 - L1[I] C4 C16X - L0[W] Q1 
+[ 16] Utilization = 0.05 | pJ/Compute =  114.813 | L4[WIO] C8 M5 - L3[WI] M2 C2 M2X C4X - L2[O] M50 - L1[I] C4 C16X - L0[W] Q1 
+[ 21] Utilization = 0.05 | pJ/Compute =  115.640 | L4[WIO] M50 - L3[WI] C8 M5X C2X - L2[O] C4 M2 - L1[I] C8 M2X C8X - L0[W] Q1 
+[ 21] Utilization = 0.05 | pJ/Compute =  114.263 | L4[WIO] M125 - L3[WI] Q1 M2X C4X - L2[O] M2 - L1[I] C64 M2 C16X - L0[W] Q1 
+[ 18] Utilization = 0.05 | pJ/Compute =  113.295 | L4[WIO] C32 - L3[WI] C8 M10X - L2[O] C2 M2 - L1[I] M25 M2X C8X - L0[W] Q1 
+[ 23] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 24] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 19] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 10] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 15] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 14] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  6] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  4] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 13] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 20] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 22] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  5] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 25] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 11] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  0] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  9] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 26] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  7] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  2] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 17] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 27] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 16] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 18] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 21] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 12] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  3] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  1] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  8] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+
+
+Summary stats for best mapping found by mapper:
+  Utilization = 0.05 | pJ/Compute =  113.295
+Running python post-processing script...
+CSV file saved to: Results/summary_stats.csv
+Done.
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/15b4eroot@d9309ac6b740:/workspace/Project_2026/15b4e# cd //     cd / ..
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026root@d9309ac6b740:/workspace/Project_2026# python3 combine_results.py 
+[?2004lMissing file: 6b4e/Results/summary_stats.csv
+Created file: combined_summary.csv
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026root@d9309ac6b740:/workspace/Project_2026# cd..
+[?2004lbash: cd..: command not found
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026root@d9309ac6b740:/workspace/Project_2026# cd 6b4e/
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/6b4eroot@d9309ac6b740:/workspace/Project_2026/6b4e# cd 6b4e/[4P..python3 combine_results.py cd ..[K./script.sh [7@chmod +x script.sh [10Pd 15b4e/hmod +x script.sh 
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/6b4eroot@d9309ac6b740:/workspace/Project_2026/6b4e# chmod +x script.sh [11Pd 6b4e/[4P..python3 combine_results.py cd ..[K./script.sh [7@chmod +x script.sh [7P./script.sh 
+[?2004linput file: ../../arch/gemini_like.yaml
+input file: ../../problemCNN/AlexNet_layer4.yaml
+input file: ../../mapper/mapper.yaml
+input file: ../../constraints/constrains.yaml
+  _______                __                
+ /_  __(_)___ ___  ___  / /___  ____  ____ 
+  / / / / __ `__ \/ _ \/ / __ \/ __ \/ __ \
+ / / / / / / / / /  __/ / /_/ / /_/ / /_/ /
+/_/ /_/_/ /_/ /_/\___/_/\____/\____/ .___/ 
+                                  /_/      
+
+Problem configuration complete.
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+execute:/usr/local/bin/accelergy ../../arch/gemini_like.yaml ../../problemCNN/AlexNet_layer4.yaml ../../mapper/mapper.yaml ../../constraints/constrains.yaml --oprefix timeloop-mapper. -o ./ > timeloop-mapper.accelergy.log 2>&1
+Generate Accelergy ERT (energy reference table) to replace internal energy model.
+Generate Accelergy ART (area reference table) to replace internal area model.
+Architecture configuration complete.
+Sparse optimization configuration complete.
+Using threads = 28
+Mapper configuration complete.
+Initializing Index Factorization subspace.
+  Factorization options along problem dimension C = 12012
+  Factorization options along problem dimension M = 12012
+  Factorization options along problem dimension R = 7
+  Factorization options along problem dimension S = 7
+  Factorization options along problem dimension N = 1
+  Factorization options along problem dimension P = 7
+  Factorization options along problem dimension Q = 7
+Mapspace Dimension [IndexFactorization] Size: 346435833744
+Mapspace Dimension [LoopPermutation] Size: 645241282560000
+Mapspace Dimension [Spatial] Size: 64
+Mapspace Dimension [DatatypeBypass] Size: 1
+Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 12372708348 Residue: 0
+Mapspace construction complete.
+Search configuration complete.
+[ 14] Utilization = 0.02 | pJ/Compute =   21.968 | L4[WIO] M8 R3 C4 - L3[WI] M8 C4X - L2[O] M3 Q13 - L1[I] S3 C24 M2 - L0[W] P13 
+[  1] Utilization = 0.02 | pJ/Compute =   46.611 | L4[WIO] Q13 M8 - L3[WI] M3 C12 S3X M2X - L2[O] C2 P13 M2 - L1[I] M4 C16 R3 - L0[W] Q1 
+[ 21] Utilization = 0.02 | pJ/Compute =   47.054 | L4[WIO] Q13 M8 - L3[WI] C12 M3 S3X M2X - L2[O] P13 C16 M2 - L1[I] R3 C2 M4 - L0[W] Q1 
+[ 11] Utilization = 0.05 | pJ/Compute =   15.595 | L4[WIO] M8 C4 R3 - L3[WI] M8 C4X - L2[O] Q13 M3 - L1[I] S3 M2 C8 C3X - L0[W] P13 
+[  1] Utilization = 0.02 | pJ/Compute =   42.970 | L4[WIO] M8 Q13 - L3[WI] M3 C12 S3X M2X - L2[O] M2 P13 C2 - L1[I] R3 C16 M4 - L0[W] Q1 
+[ 18] Utilization = 0.02 | pJ/Compute =   48.725 | L4[WIO] Q13 M8 - L3[WI] M3 C12 S3X M2X - L2[O] M2 P13 C32 - L1[I] R3 M4 - L0[W] Q1 
+[ 13] Utilization = 0.03 | pJ/Compute =   18.055 | L4[WIO] M8 R3 C4 - L3[WI] M8 C4X - L2[O] M3 Q13 - L1[I] S3 C12 M2 C2X - L0[W] P13 
+[  6] Utilization = 0.09 | pJ/Compute =   14.290 | L4[WIO] M8 C4 R3 - L3[WI] M8 C4X - L2[O] Q13 M3 - L1[I] S3 M2 C4 C6X - L0[W] P13 
+[  9] Utilization = 0.06 | pJ/Compute =   14.943 | L4[WIO] M8 C4 R3 - L3[WI] M8 C4X - L2[O] Q13 M3 - L1[I] S3 M2 C6 C4X - L0[W] P13 
+[  1] Utilization = 0.02 | pJ/Compute =   40.811 | L4[WIO] M8 Q13 - L3[WI] C12 M3 S3X M2X - L2[O] M2 C2 P13 - L1[I] C16 R3 M4 - L0[W] Q1 
+[  2] Utilization = 0.12 | pJ/Compute =   13.964 | L4[WIO] M8 C4 R3 - L3[WI] M8 C4X - L2[O] Q13 M3 - L1[I] S3 M2 C3 C8X - L0[W] P13 
+[ 14] Utilization = 0.02 | pJ/Compute =   21.556 | L4[WIO] M8 C4 R3 - L3[WI] M8 C4X - L2[O] M3 Q13 - L1[I] M2 S3 C24 - L0[W] P13 
+[ 17] Utilization = 0.02 | pJ/Compute =   47.054 | L4[WIO] Q13 M8 - L3[WI] C12 M3 S3X M2X - L2[O] C8 P13 M2 - L1[I] R3 M4 C4 - L0[W] Q1 
+[  0] Utilization = 0.01 | pJ/Compute =   17.516 | L4[WIO] R3 C2 M2 - L3[WI] P13 C8 M2 M2X - L2[O] C4 M3 S3 - L1[I] C6 M16 - L0[W] Q13 
+[  7] Utilization = 0.50 | pJ/Compute =   32.394 | L4[WIO] C3 M12 - L3[WI] C2 P13 S3 M2X C8X - L2[O] Q13 M2 - L1[I] M4 R3 C2 M2X C4X - L0[W] Q1 
+[ 20] Utilization = 0.19 | pJ/Compute =   23.303 | L4[WIO] M8 C4 R3 - L3[WI] M8 C4X - L2[O] Q13 M3 C2 - L1[I] S3 M2 C12X - L0[W] P13 
+[ 12] Utilization = 0.01 | pJ/Compute =   15.867 | L4[WIO] C2 M2 R3 - L3[WI] P13 M2 C8 M2X - L2[O] S3 C12 M3 - L1[I] C2 M16 - L0[W] Q13 
+[ 19] Utilization = 0.19 | pJ/Compute =    8.774 | L4[WIO] R3 C2 M2 - L3[WI] M2 P13 C8 M2X C2X - L2[O] M3 S3 - L1[I] M16 C12X - L0[W] Q13 
+[ 21] Utilization = 0.02 | pJ/Compute =   46.611 | L4[WIO] Q13 M8 - L3[WI] M3 C12 S3X M2X - L2[O] C16 P13 M2 - L1[I] M4 C2 R3 - L0[W] Q1 
+[ 18] Utilization = 0.02 | pJ/Compute =   40.368 | L4[WIO] M8 Q13 - L3[WI] M3 C12 S3X M2X - L2[O] M2 C32 P13 - L1[I] R3 M4 - L0[W] Q1 
+[ 14] Utilization = 0.02 | pJ/Compute =   20.813 | L4[WIO] C4 M8 R3 - L3[WI] M8 C4X - L2[O] Q13 M3 - L1[I] M2 C24 S3 - L0[W] P13 
+[ 13] Utilization = 0.03 | pJ/Compute =   17.643 | L4[WIO] M8 C4 R3 - L3[WI] M8 C4X - L2[O] M3 Q13 - L1[I] M2 S3 C12 C2X - L0[W] P13 
+[  4] Utilization = 0.19 | pJ/Compute =   37.839 | L4[WIO] M8 R3 - L3[WI] M2 C4 P13 Q13 M2X C2X - L2[O] S3 C48 - L1[I] Q1 M12X - L0[W] Q1 
+[ 24] Utilization = 0.09 | pJ/Compute =   14.702 | L4[WIO] M8 R3 C4 - L3[WI] M8 C4X - L2[O] Q13 C2 M3 - L1[I] S3 M2 C2 C6X - L0[W] P13 
+[  8] Utilization = 0.02 | pJ/Compute =   12.225 | L4[WIO] M2 C2 R3 - L3[WI] P13 C8 M2 M2X - L2[O] C8 S3 M3 - L1[I] M16 C3X - L0[W] Q13 
+[ 27] Utilization = 0.06 | pJ/Compute =   15.354 | L4[WIO] M8 R3 C4 - L3[WI] M8 C4X - L2[O] Q13 C2 M3 - L1[I] S3 M2 C3 C4X - L0[W] P13 
+[  3] Utilization = 0.03 | pJ/Compute =   11.572 | L4[WIO] M2 C2 R3 - L3[WI] C8 M2 P13 M2X - L2[O] C6 S3 M3 - L1[I] M16 C4X - L0[W] Q13 
+[ 16] Utilization = 0.05 | pJ/Compute =   43.141 | L4[WIO] Q13 M8 - L3[WI] C12 M3 S3X M2X - L2[O] P13 C8 M2 - L1[I] M4 R3 C2 C2X - L0[W] Q1 
+[ 10] Utilization = 0.05 | pJ/Compute =   37.386 | L4[WIO] M8 Q13 - L3[WI] C12 M3 S3X M2X - L2[O] C4 P13 M2 - L1[I] R3 C4 M4 C2X - L0[W] Q1 
+[ 26] Utilization = 0.06 | pJ/Compute =   10.059 | L4[WIO] C2 M2 R3 - L3[WI] P13 M2 C8 M2X C2X - L2[O] M3 S3 - L1[I] M16 C3 C4X - L0[W] Q13 
+[ 17] Utilization = 0.02 | pJ/Compute =   46.566 | L4[WIO] Q13 M8 - L3[WI] C12 M3 S3X M2X - L2[O] M2 C8 P13 - L1[I] R3 M4 C4 - L0[W] Q1 
+[ 23] Utilization = 0.09 | pJ/Compute =    9.372 | L4[WIO] C2 R3 M2 - L3[WI] M2 P13 C8 M2X C2X - L2[O] S3 M3 - L1[I] M16 C2 C6X - L0[W] Q13 
+[  5] Utilization = 0.02 | pJ/Compute =   13.548 | L4[WIO] R3 C2 M2 - L3[WI] C8 P13 M2 M2X - L2[O] C6 S3 M3 - L1[I] M16 C2 C2X - L0[W] Q13 
+[ 17] Utilization = 0.02 | pJ/Compute =   43.414 | L4[WIO] M8 Q13 - L3[WI] C12 M3 S3X M2X - L2[O] M2 P13 C8 - L1[I] M4 R3 C4 - L0[W] Q1 
+[  8] Utilization = 0.02 | pJ/Compute =   10.703 | L4[WIO] M2 C2 R3 - L3[WI] P13 M2 C8 M2X - L2[O] C8 M3 S3 - L1[I] M16 C3X - L0[W] Q13 
+[  7] Utilization = 0.50 | pJ/Compute =   32.252 | L4[WIO] C3 M12 - L3[WI] P13 C2 S3 M2X C8X - L2[O] Q13 M2 - L1[I] C2 R3 M4 M2X C4X - L0[W] Q1 
+[  2] Utilization = 0.75 | pJ/Compute =    7.962 | L4[WIO] M2 S3 C2 - L3[WI] M4 Q13 C3 R3X C4X - L2[O] M4 - L1[I] M6 C2 P13 M2X C8X - L0[W] Q1 
+[  4] Utilization = 1.00 | pJ/Compute =   31.628 | L4[WIO] M12 C3 - L3[WI] P13 C2 S3 M2X C8X - L2[O] Q13 M2 - L1[I] R3 M4 M2X C8X - L0[W] Q1 
+[  4] Utilization = 1.00 | pJ/Compute =   31.274 | L4[WIO] C3 M12 - L3[WI] P13 C2 S3 M2X C8X - L2[O] Q13 M2 - L1[I] R3 M4 M2X C8X - L0[W] Q1 
+[ 24] Utilization = 1.00 | pJ/Compute =   10.587 | L4[WIO] C2 S3 - L3[WI] M12 C6 M16X - L2[O] M2 C2 Q13 - L1[I] R3 C16X - L0[W] P13 
+[ 24] Utilization = 1.00 | pJ/Compute =    9.417 | L4[WIO] S3 C2 - L3[WI] M12 C6 M16X - L2[O] Q13 C2 M2 - L1[I] R3 C16X - L0[W] P13 
+[  9] Utilization = 1.00 | pJ/Compute =    9.366 | L4[WIO] C2 S3 - L3[WI] M12 C6 M16X - L2[O] Q13 M2 - L1[I] C2 R3 C16X - L0[W] P13 
+[ 26] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 18] Utilization = 1.00 | pJ/Compute =    7.833 | L4[WIO] R3 S3 - L3[WI] M2 Q13 M16X - L2[O] C12 M6 - L1[I] C4 M2X C8X - L0[W] P13 
+[  3] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 12] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 11] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 22] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  1] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 25] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  2] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 17] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 23] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 14] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 27] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 13] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 19] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  4] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 20] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 16] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  7] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  8] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 10] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  5] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 21] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  6] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  9] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  0] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 24] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 15] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 18] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+
+
+Summary stats for best mapping found by mapper:
+  Utilization = 1.00 | pJ/Compute =    7.833
+input file: ../../arch/gemini_like.yaml
+input file: ../../problemCNN/AlexNet_layer7_FC.yaml
+input file: ../../mapper/mapper.yaml
+input file: ../../constraints/constrains.yaml
+  _______                __                
+ /_  __(_)___ ___  ___  / /___  ____  ____ 
+  / / / / __ `__ \/ _ \/ / __ \/ __ \/ __ \
+ / / / / / / / / /  __/ / /_/ / /_/ / /_/ /
+/_/ /_/_/ /_/ /_/\___/_/\____/\____/ .___/ 
+                                  /_/      
+
+Problem configuration complete.
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+Warning: neither block size nor cluster size specified, set according to specified storage width: block size: 1  cluster-size: 1
+execute:/usr/local/bin/accelergy ../../arch/gemini_like.yaml ../../problemCNN/AlexNet_layer7_FC.yaml ../../mapper/mapper.yaml ../../constraints/constrains.yaml --oprefix timeloop-mapper. -o ./ > timeloop-mapper.accelergy.log 2>&1
+Generate Accelergy ERT (energy reference table) to replace internal energy model.
+Generate Accelergy ART (area reference table) to replace internal area model.
+Architecture configuration complete.
+Sparse optimization configuration complete.
+Using threads = 28
+Mapper configuration complete.
+Initializing Index Factorization subspace.
+  Factorization options along problem dimension C = 18564
+  Factorization options along problem dimension M = 18564
+  Factorization options along problem dimension R = 1
+  Factorization options along problem dimension S = 1
+  Factorization options along problem dimension N = 1
+  Factorization options along problem dimension P = 1
+  Factorization options along problem dimension Q = 1
+Mapspace Dimension [IndexFactorization] Size: 344622096
+Mapspace Dimension [LoopPermutation] Size: 645241282560000
+Mapspace Dimension [Spatial] Size: 64
+Mapspace Dimension [DatatypeBypass] Size: 1
+Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 12307932 Residue: 0
+Mapspace construction complete.
+Search configuration complete.
+[  0] Utilization = 0.05 | pJ/Compute =  120.466 | L4[WIO] C8 M32 - L3[WI] C2 M4 C16X - L2[O] M4 C4 - L1[I] C2 M4 M2X C2X - L0[W] Q1 
+[ 20] Utilization = 0.05 | pJ/Compute =  115.202 | L4[WIO] C8 M256 - L3[WI] C2 C2X - L2[O] Q1 - L1[I] M8 C16 M2X C8X - L0[W] Q1 
+[ 14] Utilization = 0.05 | pJ/Compute =  120.826 | L4[WIO] C64 M4 - L3[WI] M2 C2 C2X - L2[O] M32 - L1[I] C16 M16X - L0[W] Q1 
+[ 18] Utilization = 0.02 | pJ/Compute =  119.708 | L4[WIO] C128 - L3[WI] M8 - L2[O] C2 M4 - L1[I] M128 C4 C4X - L0[W] Q1 
+[ 10] Utilization = 0.05 | pJ/Compute =  116.388 | L4[WIO] M64 C2 - L3[WI] M2 C8 C2X - L2[O] C8 M16 - L1[I] M2 C16X - L0[W] Q1 
+[  0] Utilization = 0.05 | pJ/Compute =  117.353 | L4[WIO] C8 M32 - L3[WI] M4 C2 C16X - L2[O] C4 M4 - L1[I] M4 C2 M2X C2X - L0[W] Q1 
+[ 23] Utilization = 0.04 | pJ/Compute =  121.148 | L4[WIO] M256 C8 - L3[WI] C2 C2X - L2[O] Q1 - L1[I] M8 C32 M2X C4X - L0[W] Q1 
+[  4] Utilization = 0.02 | pJ/Compute =  118.987 | L4[WIO] C2 M64 - L3[WI] C8 M2 C2X - L2[O] C4 M16 - L1[I] C16 M2 C2X - L0[W] Q1 
+[  6] Utilization = 0.05 | pJ/Compute =  114.825 | L4[WIO] C32 M16 - L3[WI] M4 - L2[O] C32 M8 - L1[I] M2 M4X C4X - L0[W] Q1 
+[ 26] Utilization = 0.03 | pJ/Compute =  118.137 | L4[WIO] C8 M256 - L3[WI] C2 C2X - L2[O] Q1 - L1[I] C64 M8 M2X C2X - L0[W] Q1 
+[  5] Utilization = 0.01 | pJ/Compute =  137.776 | L4[WIO] M64 C2 - L3[WI] C8 M2 C2X - L2[O] M16 C4 - L1[I] M2 C32 - L0[W] Q1 
+[  1] Utilization = 0.05 | pJ/Compute =  123.984 | L4[WIO] C8 M32 - L3[WI] M4 C2 C16X - L2[O] M4 C4 - L1[I] M4 C4 M2X - L0[W] Q1 
+[  5] Utilization = 0.01 | pJ/Compute =  122.901 | L4[WIO] C2 M64 - L3[WI] C8 M2 C2X - L2[O] C4 M16 - L1[I] C32 M2 - L0[W] Q1 
+[ 10] Utilization = 0.05 | pJ/Compute =  128.694 | L4[WIO] C2 M64 - L3[WI] M2 C8 C2X - L2[O] M16 C8 - L1[I] M2 C16X - L0[W] Q1 
+[  8] Utilization = 0.03 | pJ/Compute =  116.781 | L4[WIO] C32 M16 - L3[WI] M4 - L2[O] C32 M8 - L1[I] C2 M2 M4X C2X - L0[W] Q1 
+[  2] Utilization = 0.03 | pJ/Compute =  131.446 | L4[WIO] M64 C2 - L3[WI] M2 C8 C2X - L2[O] M16 C4 - L1[I] M2 C8 C4X - L0[W] Q1 
+[ 18] Utilization = 0.05 | pJ/Compute =  120.103 | L4[WIO] M4 C128 - L3[WI] C4 M2X C4X - L2[O] M4 - L1[I] C2 M64 M2X - L0[W] Q1 
+[ 14] Utilization = 0.05 | pJ/Compute =  115.593 | L4[WIO] C2 M64 - L3[WI] M2 C8 C2X - L2[O] C8 M16 - L1[I] C2 M2 C8X - L0[W] Q1 
+[  2] Utilization = 0.03 | pJ/Compute =  117.031 | L4[WIO] C2 M64 - L3[WI] C8 M2 C2X - L2[O] C4 M16 - L1[I] M2 C8 C4X - L0[W] Q1 
+[  2] Utilization = 0.03 | pJ/Compute =  116.571 | L4[WIO] C2 M64 - L3[WI] M2 C8 C2X - L2[O] C4 M16 - L1[I] C8 M2 C4X - L0[W] Q1 
+[ 23] Utilization = 0.05 | pJ/Compute =  114.232 | L4[WIO] M4 C128 - L3[WI] C8 M2X - L2[O] M4 - L1[I] M64 M2X C4X - L0[W] Q1 
+[ 25] Utilization = 0.05 | pJ/Compute =  114.217 | L4[WIO] M128 - L3[WI] C512 M2X - L2[O] M4 - L1[I] M2 M2X C8X - L0[W] Q1 
+[ 10] Utilization = 0.05 | pJ/Compute =  113.494 | L4[WIO] M4 C64 - L3[WI] Q1 M4X - L2[O] M16 - L1[I] C16 M4 M4X C4X - L0[W] Q1 
+[ 15] Utilization = 0.05 | pJ/Compute =  113.249 | L4[WIO] M4 C32 - L3[WI] Q1 - L2[O] C8 M256 - L1[I] M2 C2 M2X C8X - L0[W] Q1 
+[ 12] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  3] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  0] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 14] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 13] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  9] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 22] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 11] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  2] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 19] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  4] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  7] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  8] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 20] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 26] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  6] Utilization = 0.05 | pJ/Compute =  113.204 | L4[WIO] C2 M128 - L3[WI] M2 M2X C4X - L2[O] M4 - L1[I] C64 M2X C8X - L0[W] Q1 
+[  5] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 17] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 25] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 21] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 23] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  1] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 18] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 27] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 16] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 10] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 24] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[ 15] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+[  6] STATEMENT: 2000 suboptimal mappings found since the last upgrade, terminating search.
+
+
+Summary stats for best mapping found by mapper:
+  Utilization = 0.05 | pJ/Compute =  113.204
+Running python post-processing script...
+CSV file saved to: Results/summary_stats.csv
+Done.
+[?2004h]0;root@d9309ac6b740: /workspace/Project_2026/6b4eroot@d9309ac6b740:/workspace/Project_2026/6b4e# cd ..
+[?2004l[?2004h]0;root@d9309ac6b740: /workspace/Project_2026root@d9309ac6b740:/workspace/Project_2026# cd  python combine_results.py 
+[?2004lbash: python: command not found
+[?2004h]0;root@d9309ac6b740: /workspace/Project_20

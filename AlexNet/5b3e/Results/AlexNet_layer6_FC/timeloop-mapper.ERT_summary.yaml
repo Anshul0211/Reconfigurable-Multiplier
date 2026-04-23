@@ -1,0 +1,87 @@
+ERT_summary:
+  version: 0.3
+  table_summary:
+  - name: System.Chip.PECols[0..15].PERows[0..15].Registers
+    actions:
+    - name: read
+      average_energy: 0.07384
+      max_energy: 0.14416
+      min_energy: 0.00352
+    - name: write
+      average_energy: 0.07384
+      max_energy: 0.14416
+      min_energy: 0.00352
+    - name: idle
+      energy: 0.00352
+    primitive_estimation(s):
+    - name: System.Chip.PECols[0..15].PERows[0..15].Registers
+      estimator: Aladdin_table
+  - name: System.Chip.PECols[0..15].PERows[0..15].MACC
+    actions:
+    - name: mac_random
+      energy: 2.52495
+    - name: mac_reused
+      energy: 2.15265
+    - name: mac_gated
+      energy: 1.87295
+    - name: idle
+      energy: 1.83355
+    primitive_estimation(s):
+    - name: System.Chip.PECols[0..15].PERows[0..15].MACC
+      estimator: Aladdin_table
+  - name: System.Chip.PECols[0..15].Accumulator
+    actions:
+    - name: read
+      average_energy: 1.28029
+      max_energy: 2.56052
+      min_energy: 6.0e-05
+    - name: write
+      average_energy: 1.22771
+      max_energy: 2.45536
+      min_energy: 6.0e-05
+    - name: idle
+      energy: 6.0e-05
+    primitive_estimation(s):
+    - name: System.Chip.PECols[0..15].Accumulator
+      estimator: Cacti
+  - name: System.Chip.PECols[0..15].Input_Buffer
+    actions:
+    - name: read
+      average_energy: 1.28029
+      max_energy: 2.56052
+      min_energy: 6.0e-05
+    - name: write
+      average_energy: 1.22771
+      max_energy: 2.45536
+      min_energy: 6.0e-05
+    - name: idle
+      energy: 6.0e-05
+    primitive_estimation(s):
+    - name: System.Chip.PECols[0..15].Input_Buffer
+      estimator: Cacti
+  - name: System.Chip.Scratchpad
+    actions:
+    - name: read
+      average_energy: 6.52053
+      max_energy: 13.0399
+      min_energy: 0.00117
+    - name: write
+      average_energy: 5.54269
+      max_energy: 11.0842
+      min_energy: 0.00117
+    - name: idle
+      energy: 0.00117
+    primitive_estimation(s):
+    - name: System.Chip.Scratchpad
+      estimator: Cacti
+  - name: System.DRAM
+    actions:
+    - name: read
+      energy: 62.4
+    - name: write
+      energy: 62.4
+    - name: idle
+      energy: 0
+    primitive_estimation(s):
+    - name: System.DRAM
+      estimator: Cacti

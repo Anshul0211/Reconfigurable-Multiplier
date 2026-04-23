@@ -1,0 +1,15 @@
+ART:
+  version: 0.3
+  tables:
+  - name: System.Chip.PECols[0..15].PERows[0..15].Registers
+    area: 95.68
+  - name: System.Chip.PECols[0..15].PERows[0..15].MACC
+    area: 2561.62
+  - name: System.Chip.PECols[0..15].Accumulator
+    area: 19808.9
+  - name: System.Chip.PECols[0..15].Input_Buffer
+    area: 19808.9
+  - name: System.Chip.Scratchpad
+    area: 223994.0
+  - name: System.DRAM
+    area: 0

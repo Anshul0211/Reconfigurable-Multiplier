@@ -1,0 +1,308 @@
+ERT:
+  version: 0.3
+  tables:
+  - name: System.Chip.PECols[0..15].PERows[0..15].Registers
+    actions:
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 0.00352
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 0.14416
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.00352
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 0.14416
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 0.00352
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 0.14416
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.00352
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 0.14416
+    - name: idle
+      arguments: null
+      energy: 0.00352
+  - name: System.Chip.PECols[0..15].PERows[0..15].MACC
+    actions:
+    - name: mac_random
+      arguments: null
+      energy: 2.86095
+    - name: mac_reused
+      arguments: null
+      energy: 2.43825
+    - name: mac_gated
+      arguments: null
+      energy: 2.11295
+    - name: idle
+      arguments: null
+      energy: 2.07355
+  - name: System.Chip.PECols[0..15].Accumulator
+    actions:
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 6.0e-05
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 1.79238
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.38413
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 2.17645
+    - name: read
+      arguments:
+        address_delta: 2
+        data_delta: 0
+      energy: 0.7682
+    - name: read
+      arguments:
+        address_delta: 2
+        data_delta: 1
+      energy: 2.56052
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 6.0e-05
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 1.71877
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.36835
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 2.08706
+    - name: write
+      arguments:
+        address_delta: 2
+        data_delta: 0
+      energy: 0.73665
+    - name: write
+      arguments:
+        address_delta: 2
+        data_delta: 1
+      energy: 2.45536
+    - name: idle
+      arguments: null
+      energy: 6.0e-05
+  - name: System.Chip.PECols[0..15].Input_Buffer
+    actions:
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 6.0e-05
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 1.79238
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.38413
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 2.17645
+    - name: read
+      arguments:
+        address_delta: 2
+        data_delta: 0
+      energy: 0.7682
+    - name: read
+      arguments:
+        address_delta: 2
+        data_delta: 1
+      energy: 2.56052
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 6.0e-05
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 1.71877
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.36835
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 2.08706
+    - name: write
+      arguments:
+        address_delta: 2
+        data_delta: 0
+      energy: 0.73665
+    - name: write
+      arguments:
+        address_delta: 2
+        data_delta: 1
+      energy: 2.45536
+    - name: idle
+      arguments: null
+      energy: 6.0e-05
+  - name: System.Chip.Scratchpad
+    actions:
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 0.00117
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 9.12828
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.97907
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 10.10619
+    - name: read
+      arguments:
+        address_delta: 2
+        data_delta: 0
+      energy: 1.95698
+    - name: read
+      arguments:
+        address_delta: 2
+        data_delta: 1
+      energy: 11.08409
+    - name: read
+      arguments:
+        address_delta: 3
+        data_delta: 0
+      energy: 2.93488
+    - name: read
+      arguments:
+        address_delta: 3
+        data_delta: 1
+      energy: 12.062
+    - name: read
+      arguments:
+        address_delta: 4
+        data_delta: 0
+      energy: 3.91279
+    - name: read
+      arguments:
+        address_delta: 4
+        data_delta: 1
+      energy: 13.0399
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 0
+      energy: 0.00117
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 1
+      energy: 7.75929
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 0
+      energy: 0.8324
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 1
+      energy: 8.59052
+    - name: write
+      arguments:
+        address_delta: 2
+        data_delta: 0
+      energy: 1.66362
+    - name: write
+      arguments:
+        address_delta: 2
+        data_delta: 1
+      energy: 9.42175
+    - name: write
+      arguments:
+        address_delta: 3
+        data_delta: 0
+      energy: 2.49485
+    - name: write
+      arguments:
+        address_delta: 3
+        data_delta: 1
+      energy: 10.25297
+    - name: write
+      arguments:
+        address_delta: 4
+        data_delta: 0
+      energy: 3.32608
+    - name: write
+      arguments:
+        address_delta: 4
+        data_delta: 1
+      energy: 11.0842
+    - name: idle
+      arguments: null
+      energy: 0.00117
+  - name: System.DRAM
+    actions:
+    - name: read
+      arguments: null
+      energy: 62.4
+    - name: write
+      arguments: null
+      energy: 62.4
+    - name: idle
+      arguments: null
+      energy: 0

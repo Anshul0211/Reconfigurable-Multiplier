@@ -1,0 +1,2 @@
+Folder,TOPS/W,Cycles,Computes,pJ_LMAC,pJ_PEWeightRegs,pJ_PEAccuBuffer,pJ_PEInputBuffer,pJ_GlobalBuffer,pJ_DRAM,pJ/Compute,Energy,Utilization,EDP
+AlexNet_layer6_FC,0.13124921430242273,3149142,37748736,2.52,0.29,1.25,0.64,24.15,62.47,91.33,3447.5,0.05,10900.0

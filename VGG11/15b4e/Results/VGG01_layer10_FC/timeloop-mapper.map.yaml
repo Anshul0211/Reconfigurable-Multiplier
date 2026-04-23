@@ -1,0 +1,62 @@
+mapping:
+  - target: Registers
+    type: datatype
+    keep:
+      - Weights
+    bypass:
+      - Inputs
+      - Outputs
+  - target: Input_Buffer
+    type: datatype
+    keep:
+      - Inputs
+    bypass:
+      - Weights
+      - Outputs
+  - target: Accumulator
+    type: datatype
+    keep:
+      - Outputs
+    bypass:
+      - Weights
+      - Inputs
+  - target: Scratchpad
+    type: datatype
+    keep:
+      - Weights
+      - Inputs
+    bypass:
+      - Outputs
+  - target: DRAM
+    type: datatype
+    keep:
+      - Weights
+      - Inputs
+      - Outputs
+    bypass:
+      []
+  - target: Registers
+    type: temporal
+    factors: C1 M1 R1 S1 N1 P1 Q1
+    permutation: CMRSNPQ
+  - target: Input_Buffer
+    type: spatial
+    factors: C8 M2 R1 S1 N1 P1 Q1
+    permutation: CMRSNPQ
+    split: 2
+  - target: Input_Buffer
+    type: temporal
+    factors: C16 M5 R1 S1 N1 P1 Q1
+    permutation: CMRSNPQ
+  - target: Accumulator
+    type: temporal
+    factors: C2 M1 R1 S1 N1 P1 Q1
+    permutation: CMRSNPQ
+  - target: Scratchpad
+    type: temporal
+    factors: C2 M1 R1 S1 N1 P1 Q1
+    permutation: CMRSNPQ
+  - target: DRAM
+    type: temporal
+    factors: C1 M1 R1 S1 N1 P1 Q1
+    permutation: CMRSNPQ

@@ -1,0 +1,2 @@
+Folder,TOPS/W,Cycles,Computes,pJ_LMAC,pJ_PEWeightRegs,pJ_PEAccuBuffer,pJ_PEInputBuffer,pJ_GlobalBuffer,pJ_DRAM,pJ/Compute,Energy,Utilization,EDP
+VGG01_layer8,38.78787878787879,1806336,462422016,2.64,0.16,1.25,0.71,1.1,0.73,6.6,3051.43,1.0,5510.0
