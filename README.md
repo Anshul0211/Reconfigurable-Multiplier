@@ -19,7 +19,7 @@ We initially explored a **Vedic multiplier-based design**, but it did not scale 
 
 ## Repository Structure
 
-### 🔹 RTL Designs
+### RTL Designs
 
 - `top_module.sv`  
   Final implementation of the **precision-gated Radix-4 Booth multiplier**.  
